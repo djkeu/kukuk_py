@@ -1,4 +1,8 @@
 # Structure of Kukuk
 
-# kukuk.py
-# Introduction
+"""
+kukuk.py
+- Introduction
+
+
+"""
