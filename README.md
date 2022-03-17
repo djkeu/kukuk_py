@@ -7,3 +7,4 @@ Supposed to go once every 15 minutes and the number of times the hour of the day
 
 Create a Python program, check which modules are needed and build from there.
 Create index.py to keep track of the structure
+Create kukuk.py, the main program
