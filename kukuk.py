@@ -1,13 +1,13 @@
 # Program to mimic a cuckoo-clock
 import pygame
 
-screen = pygame.display.set_mode((400, 300))
-
-pygame.display.set_caption("Kukuk")
-
+window_size = (400, 300)
+window_caption = "Kukuk"
 bg_color = (123, 234, 222)
-screen.fill(bg_color)
 
+screen = pygame.display.set_mode(window_size)
+pygame.display.set_caption(window_caption)
+screen.fill(bg_color)
 pygame.display.flip()
 
 running = True
