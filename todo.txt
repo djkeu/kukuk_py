@@ -2,10 +2,6 @@ ToDo kukuk.py
 
 
 ToDo:
-- Use pygame to play keukuk*.wav
-    - Fix pygame error: Done (16-bit sound file instead of 32-bit float)
-    - Sound appears muted.
-    Use playsound instead?
 - Use turtle to draw a cuckoo
 - Move cuckoo to cuckoo.py
 - Use 'k'-key to play sound
@@ -19,3 +15,7 @@ Done:
     - Had to call update_screen in run_game
 - Record keukuk.wav
 - Create maps for images and sounds
+- Use pygame to play keukuk*.wav
+    - Fix pygame error: Done (16-bit sound file instead of 32-bit float)
+    - Sound appears muted.
+    - Use playsound instead

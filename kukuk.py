@@ -1,4 +1,6 @@
 import pygame
+from playsound import playsound
+
 from settings import Settings
 
 
@@ -30,8 +32,8 @@ class Kukuk:
                     running = False
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_k:
-                        pygame.mixer.Sound(self.kuku_sound)
-
+                        # pygame.mixer.Sound(self.kuku_sound)
+                        playsound('sounds/keukuk04.wav')
             self.update_screen()
 
 
