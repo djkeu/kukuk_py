@@ -1,6 +1,4 @@
-# Program to mimic a cuckoo-clock
 import pygame
-
 from settings import Settings
 
 
@@ -31,7 +29,6 @@ class Kukuk:
             self.update_screen()
 
 
-# Create and call instance of Kukuk()
 if __name__ == '__main__':
     ku = Kukuk()
     ku.run_clock()
