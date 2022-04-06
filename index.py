@@ -1,7 +1,8 @@
 """
 ToDo kukuk.py
 - Use pygame to create a window
-- Use pygame to play the sound of a cuckoo
+- Record keukuk.wav
+- Use pygame to play keukuk.wav
 - Use turtle to draw a cuckoo
 - Move settings to settings.py
 - Move cuckoo to cuckoo.py
