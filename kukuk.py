@@ -33,6 +33,7 @@ class Kukuk:
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_k:
                         # pygame.mixer.Sound(self.kuku_sound)
+                        # Raises: <Sound object at 0x7f409f184b10>
                         playsound('sounds/keukuk04.wav')
             self.update_screen()
 
