@@ -11,7 +11,6 @@ class Kukuk:
         pygame.init()
         self.settings = Settings()
 
-        self.bg_color = (123, 234, 222)
         self.screen = pygame.display.set_mode(self.settings.window_size)
         pygame.display.set_caption(self.settings.window_caption)
 
@@ -23,9 +22,11 @@ class Kukuk:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
+            self.update_screen()
 
     def update_screen(self):
-        self.screen.fill(self.settings.bg_color)
+        self.screen.fill((123, 234, 222))
+#        self.screen.fill(self.settings.bg_color)
         pygame.display.flip()
 
 if __name__ == '__main__':

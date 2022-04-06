@@ -1,6 +1,8 @@
 """
 ToDo kukuk.py
-- Use pygame to create a window
+
+- Get update_screen to fill with bg_color
+
 - Record keukuk.wav
 - Use pygame to play keukuk.wav
 - Use turtle to draw a cuckoo
