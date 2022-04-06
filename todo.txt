@@ -3,6 +3,7 @@ ToDo kukuk.py
 
 ToDo:
 - Use pygame to play keukuk*.wav
+    - Use playsound instead?
 - Use turtle to draw a cuckoo
 - Move cuckoo to cuckoo.py
 - Use 'k'-key to play sound
