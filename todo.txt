@@ -5,7 +5,7 @@ ToDo:
 - Use turtle to draw a cuckoo
 - Move cuckoo to cuckoo.py
 - Use 'k'-key to play sound
-- Use a module to play sound every 15 minutes
+- Find a module to play sound every 15 minutes
 
 
 Done:
