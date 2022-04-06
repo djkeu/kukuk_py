@@ -10,10 +10,10 @@ class Kukuk:
         """Initialize clock."""
         pygame.init()
         self.settings = Settings()
-        self.window_caption = "Kukuk"
+
         self.bg_color = (123, 234, 222)
         self.screen = pygame.display.set_mode(self.settings.window_size)
-        pygame.display.set_caption(self.window_caption)
+        pygame.display.set_caption(self.settings.window_caption)
 
     def run_clock(self):
         """Start the loop for the clock."""
