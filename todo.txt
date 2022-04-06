@@ -1,6 +1,7 @@
-"""
 ToDo kukuk.py
 
+
+ToDo:
 - Record keukuk.wav
 - Use pygame to play keukuk.wav
 - Use turtle to draw a cuckoo
@@ -9,6 +10,7 @@ ToDo kukuk.py
 - Use 'k'-key to play sound
 - Use a module to play sound every 15 minutes
 
+
 Done:
 - Use pygame to create a window
 - Move settings to settings.py
@@ -16,4 +18,3 @@ Done:
     - Had to call update_screen in run_game
 
 
-"""
