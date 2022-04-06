@@ -1,6 +1,8 @@
 # Program to mimic a cuckoo-clock
 import pygame
 
+from settings import Settings
+
 window_size = (400, 300)
 window_caption = "Kukuk"
 bg_color = (123, 234, 222)
