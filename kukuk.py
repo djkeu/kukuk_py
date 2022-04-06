@@ -15,6 +15,10 @@ class Kukuk:
         self.screen = pygame.display.set_mode(self.settings.window_size)
         pygame.display.set_caption(self.settings.window_caption)
 
+    def update_screen(self):
+        self.screen.fill(self.settings.bg_color)
+        pygame.display.flip()
+
     def run_clock(self):
         """Start the loop for the clock."""
         running = True
@@ -24,10 +28,6 @@ class Kukuk:
                 if event.type == pygame.QUIT:
                     running = False
             self.update_screen()
-
-    def update_screen(self):
-        self.screen.fill(self.settings.bg_color)
-        pygame.display.flip()
 
 
 # Create and call instance of Kukuk()
