@@ -10,4 +10,3 @@ class Settings:
 
         # Sound setting
         self.kuku_sound = 'sounds/keukuk02.wav'
-        

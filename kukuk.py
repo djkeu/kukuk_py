@@ -12,6 +12,7 @@ class Kukuk:
 
         self.screen = pygame.display.set_mode(self.settings.window_size)
         pygame.display.set_caption(self.settings.window_caption)
+        self.kuku_sound = self.settings.kuku_sound
 
     def update_screen(self):
         """Update screen, flip to new screen."""
@@ -26,6 +27,10 @@ class Kukuk:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_k:
+                        pygame.mixer.Sound(self.kuku_sound)
+
             self.update_screen()
 
 
