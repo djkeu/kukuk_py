@@ -26,8 +26,7 @@ class Kukuk:
             self.update_screen()
 
     def update_screen(self):
-        self.screen.fill((123, 234, 222))
-#        self.screen.fill(self.settings.bg_color)
+        self.screen.fill(self.settings.bg_color)
         pygame.display.flip()
 
 
