@@ -1,6 +1,4 @@
 # Program to mimic a cuckoo-clock
-import sys
-from turtle import bgcolor
 import pygame
 
 screen = pygame.display.set_mode((400, 300))
