@@ -3,6 +3,7 @@ import pygame
 
 from settings import Settings
 
+
 class Kukuk:
     """Class to control behaviour of the cuckoo's clock."""
 
@@ -29,6 +30,8 @@ class Kukuk:
 #        self.screen.fill(self.settings.bg_color)
         pygame.display.flip()
 
+
+# Create and call instance of Kukuk()
 if __name__ == '__main__':
     ku = Kukuk()
     ku.run_clock()
