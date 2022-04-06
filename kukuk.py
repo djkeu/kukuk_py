@@ -12,6 +12,7 @@ class Kukuk:
 
         self.screen = pygame.display.set_mode(self.settings.window_size)
         pygame.display.set_caption(self.settings.window_caption)
+
         self.kuku_sound = self.settings.kuku_sound
 
     def update_screen(self):
