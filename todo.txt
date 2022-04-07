@@ -11,7 +11,7 @@ ToDo:
 Done:
 - Use pygame to create a window
 - Move settings to settings.py
-- Get update_screen to fill with bg_color
+- Get update_screen to fill screen with bg_color
     - Had to call update_screen in run_game
 - Record keukuk.wav
 - Create maps for images and sounds
