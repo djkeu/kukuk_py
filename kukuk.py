@@ -3,7 +3,7 @@ from playsound import playsound
 from datetime import datetime
 
 from settings import Settings
-from quarterly_alarm import quarterly
+from alarms import quarterly
 
 
 class Kukuk:
@@ -29,6 +29,9 @@ class Kukuk:
         running = True
 
         while running:
+            quarterly_alarms = ["00", "15:00", "30:00", "45:00"]
+            current_time = datetime.now().strftime("%S")
+
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
@@ -39,12 +42,8 @@ class Kukuk:
                         playsound('sounds/keukuk04.wav')
                 # else:
                 #    quarterly()
-                quarterly_alarms = ["54:00", "15:00", "30:00", "45:00"]
-                current_time = datetime.now().strftime("%M:%S")
-
                 if current_time in quarterly_alarms:
                     playsound('sounds/keukuk04.wav')
-
 
             self.update_screen()
 
