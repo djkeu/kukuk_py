@@ -4,9 +4,6 @@ ToDo kukuk.py
 ToDo:
 - Use turtle to draw a cuckoo
 - Move cuckoo to cuckoo.py
-- Use 'k'-key to play sound
-- Find a module to play sound every 15 minutes
-    - pip install datetime
 
 
 Done:
@@ -20,3 +17,6 @@ Done:
     - Fix pygame error: Done (16-bit sound file instead of 32-bit float)
     - Sound appears muted.
     - Use playsound instead
+- Use 'k'-key to play sound
+- Find a module to play sound every 15 minutes
+    - pip install datetime
