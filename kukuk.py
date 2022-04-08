@@ -1,5 +1,4 @@
 import pygame
-from playsound import playsound
 
 from settings import Settings
 from alarms import quarterly_alarms
