@@ -31,9 +31,6 @@ class Kukuk:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_k:
-                        playsound('sounds/keukuk04.wav')
 
             quarterly_alarms()
 

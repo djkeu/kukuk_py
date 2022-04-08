@@ -18,5 +18,6 @@ Done:
     - Sound appears muted.
     - Use playsound instead
 - Use 'k'-key to play sound
+    - Remove this bit when it's no longer needed
 - Find a module to play sound every 15 minutes
     - pip install datetime
