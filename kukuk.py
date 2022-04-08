@@ -3,6 +3,7 @@ from playsound import playsound
 from datetime import datetime
 
 from settings import Settings
+from quarterly_alarm import quarterly
 
 
 class Kukuk:
@@ -36,6 +37,9 @@ class Kukuk:
                         # pygame.mixer.Sound(self.kuku_sound)
                         # Raises: <Sound object at 0x7f409f184b10>
                         playsound('sounds/keukuk04.wav')
+                else:
+                    quarterly()
+                    
             self.update_screen()
 
 
