@@ -9,5 +9,4 @@ def quarterly():
             print("Weer een kwartier voorbij!")
             return False
 
-# Test
 quarterly()
