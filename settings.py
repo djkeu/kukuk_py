@@ -8,5 +8,5 @@ class Settings:
         self.bg_color = (123, 234, 222)
         self.window_caption = "Kukuk"
 
-        # Sound setting
+        # Sound settings
         self.kuku_sound = 'sounds/keukuk04.wav'
