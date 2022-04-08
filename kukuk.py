@@ -37,9 +37,15 @@ class Kukuk:
                         # pygame.mixer.Sound(self.kuku_sound)
                         # Raises: <Sound object at 0x7f409f184b10>
                         playsound('sounds/keukuk04.wav')
-                else:
-                    quarterly()
-                    
+                # else:
+                #    quarterly()
+                quarterly_alarms = ["54:00", "15:00", "30:00", "45:00"]
+                current_time = datetime.now().strftime("%M:%S")
+
+                if current_time in quarterly_alarms:
+                    playsound('sounds/keukuk04.wav')
+
+
             self.update_screen()
 
 
