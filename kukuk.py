@@ -2,7 +2,7 @@ import pygame
 from playsound import playsound
 
 from settings import Settings
-from alarms import quarterly, minutely
+from alarms import quarterly
 
 
 class Kukuk:
@@ -35,7 +35,6 @@ class Kukuk:
                     if event.key == pygame.K_k:
                         playsound('sounds/keukuk04.wav')
 
-            # minutely()
             quarterly()
 
             self.update_screen()
