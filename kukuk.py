@@ -1,7 +1,5 @@
 import pygame
 from playsound import playsound
-from datetime import datetime
-import time
 
 from settings import Settings
 from alarms import quarterly, minutely
