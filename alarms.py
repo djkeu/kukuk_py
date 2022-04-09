@@ -2,6 +2,9 @@ from datetime import datetime
 import time
 from playsound import playsound
 
+# Sound settings
+kuku_sound = 'sounds/keukuk04.wav'
+
 
 def minutely_alarms():
     """Make kukuk sound every 15 seconds, for testing purposes."""
