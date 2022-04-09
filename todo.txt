@@ -2,7 +2,6 @@ ToDo kukuk.py
 
 
 ToDo:
-- Create class Alarms for the alarms
 - Use turtle to draw a cuckoo
 - Move cuckoo to cuckoo.py
 
