@@ -1,7 +1,7 @@
-from datetime import datetime
 import time
-from playsound import playsound
+from datetime import datetime
 
+from playsound import playsound
 from settings import Settings
 
 
