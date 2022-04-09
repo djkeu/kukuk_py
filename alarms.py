@@ -4,7 +4,11 @@ from playsound import playsound
 
 from settings import Settings
 
-settings = Settings()
+
+def play_kuku_sound():
+    """Play the kuku sound once."""
+    settings = Settings()
+    playsound(settings.kuku_sound)
 
 
 def minutely_alarms():
@@ -14,7 +18,7 @@ def minutely_alarms():
 
     if current_time in alarms:
         time.sleep(1)
-        playsound(settings.kuku_sound)
+        play_kuku_sound()
         
 
 def quarterly_alarms():
@@ -24,4 +28,4 @@ def quarterly_alarms():
 
     if current_time in alarms:
         time.sleep(1)
-        playsound(settings.kuku_sound)
+        play_kuku_sound()
