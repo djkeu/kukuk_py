@@ -13,7 +13,7 @@ def minutely_alarms():
 
     if current_time in alarms:
         time.sleep(1)
-        playsound('sounds/keukuk04.wav')
+        playsound(kuku_sound)
         
 
 def quarterly_alarms():
@@ -23,4 +23,4 @@ def quarterly_alarms():
 
     if current_time in alarms:
         time.sleep(1)
-        playsound('sounds/keukuk04.wav')
+        playsound(kuku_sound)
