@@ -2,8 +2,9 @@ from datetime import datetime
 import time
 from playsound import playsound
 
-# Sound settings
-kuku_sound = 'sounds/keukuk04.wav'
+from settings import Settings
+
+settings = Settings()
 
 
 def minutely_alarms():
@@ -13,7 +14,7 @@ def minutely_alarms():
 
     if current_time in alarms:
         time.sleep(1)
-        playsound(kuku_sound)
+        playsound(settings.kuku_sound)
         
 
 def quarterly_alarms():
@@ -23,4 +24,4 @@ def quarterly_alarms():
 
     if current_time in alarms:
         time.sleep(1)
-        playsound(kuku_sound)
+        playsound(settings.kuku_sound)

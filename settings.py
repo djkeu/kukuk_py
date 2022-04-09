@@ -9,4 +9,5 @@ class Settings:
         self.window_caption = "Kukuk"
 
         # Sounds settings are in alarms.py
+        self.kuku_sound = 'sounds/keukuk04.wav'
         
