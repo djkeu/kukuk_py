@@ -1,7 +1,7 @@
 import pygame
 
 from settings import Settings
-from alarms import quarterly_alarms
+from alarms import quarterly_alarms, minutely_alarms
 
 
 class Kukuk:
@@ -15,7 +15,7 @@ class Kukuk:
         self.screen = pygame.display.set_mode(self.settings.window_size)
         pygame.display.set_caption(self.settings.window_caption)
 
-        self.kuku_sound = self.settings.kuku_sound
+        #self.kuku_sound = self.settings.kuku_sound
 
     def update_screen(self):
         """Update screen, flip to new screen."""
@@ -32,6 +32,7 @@ class Kukuk:
                     running = False
 
             quarterly_alarms()
+            minutely_alarms()
 
             self.update_screen()
 
