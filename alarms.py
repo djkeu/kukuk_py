@@ -8,7 +8,7 @@ from settings import Settings
 def play_kuku_sound():
     """Play the kuku sound once."""
     settings = Settings()
-    time.sleep(0.2)
+    time.sleep(0.3)
     playsound(settings.kuku_sound)
 
 
