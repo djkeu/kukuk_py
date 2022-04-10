@@ -1,17 +1,3 @@
-import time
-from datetime import datetime
-
-from playsound import playsound
-from settings import Settings
-
-
-def play_kuku_sound():
-    """Play the kuku sound once."""
-    settings = Settings()
-    time.sleep(0.3)
-    playsound(settings.kuku_sound)
-
-
 def hourly_alarms():
     """Play kukuk sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
@@ -52,3 +38,4 @@ def hourly_alarms():
     if current_time == "12:00:00" or current_time == "00:00:00":
         for i in range(0, 12):
             play_kuku_sound()
+
