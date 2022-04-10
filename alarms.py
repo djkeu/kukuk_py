@@ -13,7 +13,7 @@ def play_kuku_sound():
 
 
 def minutely_alarms():
-    """Make kukuk sound every 5 seconds, for testing purposes."""
+    """Play kukuk sound every 5 seconds, for testing purposes."""
     alarms = ["00", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
     current_time = datetime.now().strftime("%S")
 
@@ -22,7 +22,7 @@ def minutely_alarms():
         
 
 def quarterly_alarms():
-    """Make kukuk sound every 15 minutes."""
+    """Play kukuk sound every 15 minutes."""
     alarms = ["15:00", "30:00", "45:00"]
     current_time = datetime.now().strftime("%M:%S")
 
@@ -31,7 +31,7 @@ def quarterly_alarms():
 
 
 def hourly_alarms():
-    """Make kukuk sound according to the hours."""
+    """Play kukuk sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
 
     if current_time == "01:00:00" or current_time == "13:00:00":
