@@ -34,7 +34,8 @@ def hourly_alarms():
     current_time = datetime.now().strftime("%H:%M:%S")
 
     if current_time == "00:00:00" or current_time == "12:00:00":
-        play_kuku_sound() * 12
+        for i in range(0, 12):
+            play_kuku_sound()
     if current_time == "01:00:00" or current_time == "13:00:00":
         play_kuku_sound() * 1
     if current_time == "02:00:00" or current_time == "14:00:00":
