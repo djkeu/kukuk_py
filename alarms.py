@@ -18,7 +18,8 @@ def minutely_alarms():
     current_time = datetime.now().strftime("%S")
 
     if current_time in alarms:
-        play_kuku_sound()
+        for i in range(0, 12):
+            play_kuku_sound()
         
 
 def quarterly_alarms():
