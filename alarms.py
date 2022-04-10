@@ -37,46 +37,72 @@ def hourly_alarms():
     if current_time == "01:00:00" or current_time == "13:00:00":
         for i in range(0, 1):
             play_kuku_sound()
-    if current_time == "02:00:00" or current_time == "14:00:00":
+    elif current_time == "02:00:00" or current_time == "14:00:00":
         for i in range(0, 2):
             play_kuku_sound()
-    if current_time == "03:00:00" or current_time == "15:00:00":
+    elif current_time == "03:00:00" or current_time == "15:00:00":
         for i in range(0, 3):
             play_kuku_sound()
-    if current_time == "04:00:00" or current_time == "16:00:00":
+    elif current_time == "04:00:00" or current_time == "16:00:00":
         for i in range(0, 4):
             play_kuku_sound()
-    if current_time == "05:00:00" or current_time == "17:00:00":
+    elif current_time == "05:00:00" or current_time == "17:00:00":
         for i in range(0, 5):
             play_kuku_sound()
-    if current_time == "06:00:00" or current_time == "18:00:00":
+    elif current_time == "06:00:00" or current_time == "18:00:00":
         for i in range(0, 6):
             play_kuku_sound()
-    if current_time == "07:00:00" or current_time == "19:00:00":
+    elif current_time == "07:00:00" or current_time == "19:00:00":
         for i in range(0, 7):
             play_kuku_sound()
-    if current_time == "08:00:00" or current_time == "20:00:00":
+    elif current_time == "08:00:00" or current_time == "20:00:00":
         for i in range(0, 8):
             play_kuku_sound()
-    if current_time == "09:00:00" or current_time == "21:00:00":
+    elif current_time == "09:00:00" or current_time == "21:00:00":
         for i in range(0, 9):
             play_kuku_sound()
-    if current_time == "10:00:00" or current_time == "22:00:00":
+    elif current_time == "10:00:00" or current_time == "22:00:00":
         for i in range(0, 10):
             play_kuku_sound()
-    if current_time == "11:00:00" or current_time == "23:00:00":
+    elif current_time == "11:00:00" or current_time == "23:00:00":
         for i in range(0, 11):
             play_kuku_sound()
-    if current_time == "12:00:00" or current_time == "00:00:00":
+    elif current_time == "12:00:00" or current_time == "00:00:00":
         for i in range(0, 12):
             play_kuku_sound()
 
+
+def times_kuku(times):
+    for i in range(0, times):
+        time.sleep(0.5)
+        print("time!")
+        play_kuku_sound()
+
 def minutely_alarms_v2():
-    """Play kukuk sound every 5 seconds, for testing purposes."""
-    alarms = ["00", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
+    """Play kukuk sound every 10 seconds, for testing purposes."""
     current_time = datetime.now().strftime("%S")
 
-    if current_time in alarms:
-        play_kuku_sound()
-        
-
+    if current_time == "00":
+        times = 1
+        print(times)
+        times_kuku(times)
+    elif current_time == "10":
+        times = 2
+        print(times)
+        times_kuku(times)
+    elif current_time == "20":
+        times = 3
+        print(times)
+        times_kuku(times)
+    elif current_time == "30":
+        times = 4
+        print(times)
+        times_kuku(times)
+    elif current_time == "40":
+        times = 5
+        print(times)
+        times_kuku(times)
+    elif current_time == "50":
+        times = 6
+        print(times)
+        times_kuku(times)
