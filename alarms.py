@@ -14,7 +14,7 @@ def play_kuku_sound():
 
 def minutely_alarms():
     """Make kukuk sound every 5 seconds, for testing purposes."""
-    alarms = ["00", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
+    alarms = ["00", "30"]
     current_time = datetime.now().strftime("%S")
 
     if current_time in alarms:
