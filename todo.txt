@@ -2,24 +2,24 @@ ToDo kukuk.py
 
 
 ToDo:
-- Refactor for loops in hourly_alarms()
 - Use turtle to draw a cuckoo
 - Move cuckoo to cuckoo.py
 
 
 Done:
-- Use pygame to create a window
-- Move settings to settings.py
-- Get update_screen to fill screen with bg_color
-    - Had to call update_screen in run_game
-- Record keukuk.wav
-- Create maps for images and sounds
+- Refactor for loops in hourly_alarms()
+- Create hourly alarms
+- Find a module to play sound every 15 minutes
+    - pip install datetime
 - Use pygame to play keukuk*.wav
     - Fix pygame error: Done (16-bit sound file instead of 32-bit float)
     - Sound appears muted.
     - Use playsound instead
 - Use 'k'-key to play sound
     - Remove this bit when it's no longer needed
-- Find a module to play sound every 15 minutes
-    - pip install datetime
-- Create hourly alarms
+- Create maps for images and sounds
+- Record keukuk.wav
+- Get update_screen to fill screen with bg_color
+    - Had to call update_screen in run_game
+- Move settings to settings.py
+- Use pygame to create a window
