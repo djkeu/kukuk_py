@@ -12,7 +12,7 @@ def play_kuku_sound():
     playsound(settings.kuku_sound)
 
 
-def minutely_alarms():
+def minutely_alarms_v1():
     """Play kukuk sound every 5 seconds, for testing purposes."""
     alarms = ["00", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
     current_time = datetime.now().strftime("%S")
@@ -70,3 +70,13 @@ def hourly_alarms():
     if current_time == "12:00:00" or current_time == "00:00:00":
         for i in range(0, 12):
             play_kuku_sound()
+
+def minutely_alarms_v2():
+    """Play kukuk sound every 5 seconds, for testing purposes."""
+    alarms = ["00", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
+    current_time = datetime.now().strftime("%S")
+
+    if current_time in alarms:
+        play_kuku_sound()
+        
+
