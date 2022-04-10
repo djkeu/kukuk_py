@@ -2,7 +2,7 @@ ToDo kukuk.py
 
 
 ToDo:
-- Create hourly alarms
+- Refactor for loops in hourly_alarms()
 - Use turtle to draw a cuckoo
 - Move cuckoo to cuckoo.py
 
@@ -22,3 +22,4 @@ Done:
     - Remove this bit when it's no longer needed
 - Find a module to play sound every 15 minutes
     - pip install datetime
+- Create hourly alarms
