@@ -6,14 +6,20 @@ from settings import Settings
 
 
 def play_kuku_sound():
-    """Play the kuku sound once."""
+    """Play kuku sound once."""
     settings = Settings()
     time.sleep(0.3)
     playsound(settings.kuku_sound)
 
 
+def times_kuku(times):
+    """Play kuku sound multiple times."""
+    for i in range(0, times):
+        play_kuku_sound()
+
+
 def minutely_alarms_v1():
-    """Play kukuk sound every 5 seconds, for testing purposes."""
+    """Play kuku sound every 5 seconds, for testing purposes."""
     alarms = ["00", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
     current_time = datetime.now().strftime("%S")
 
@@ -22,7 +28,7 @@ def minutely_alarms_v1():
         
 
 def quarterly_alarms():
-    """Play kukuk sound every 15 minutes."""
+    """Play kuku sound every 15 minutes."""
     alarms = ["15:00", "30:00", "45:00"]
     current_time = datetime.now().strftime("%M:%S")
 
@@ -31,7 +37,7 @@ def quarterly_alarms():
 
 
 def hourly_alarms():
-    """Play kukuk sound according to the hours."""
+    """Play kuku sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
 
     if current_time == "01:00:00" or current_time == "13:00:00":
@@ -72,12 +78,8 @@ def hourly_alarms():
         times_kuku(times)
 
 
-def times_kuku(times):
-    for i in range(0, times):
-        play_kuku_sound()
-
 #def minutely_alarms_v2():
-    """Play kukuk sound every 10 seconds, for testing purposes."""
+    """Play kuku sound every 10 seconds, for testing purposes."""
     #current_time = datetime.now().strftime("%S")
     """
     if current_time == "00":
