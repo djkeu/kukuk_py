@@ -18,15 +18,6 @@ def times_kuku(times):
         play_kuku_sound()
 
 
-def minutely_alarms_v1():
-    """Play kuku sound every 5 seconds, for testing purposes."""
-    alarms = ["00", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"]
-    current_time = datetime.now().strftime("%S")
-
-    if current_time in alarms:
-        play_kuku_sound()
-        
-
 def quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     alarms = ["15:00", "30:00", "45:00"]
