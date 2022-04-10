@@ -13,7 +13,7 @@ def play_kuku_sound():
 
 
 def times_kuku(times):
-    """Play kuku sound multiple times."""
+    """Play kuku sound multiple times in a row."""
     for i in range(0, times):
         play_kuku_sound()
 
