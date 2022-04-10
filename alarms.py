@@ -74,7 +74,6 @@ def hourly_alarms():
 
 def times_kuku(times):
     for i in range(0, times):
-        print("time!")
         play_kuku_sound()
 
 def minutely_alarms_v2():
