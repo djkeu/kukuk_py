@@ -67,33 +67,3 @@ def hourly_alarms():
     elif current_time == "12:00:00" or current_time == "00:00:00":
         times = 12
         times_kuku(times)
-
-
-#def minutely_alarms_v2():
-    """Play kuku sound every 10 seconds, for testing purposes."""
-    #current_time = datetime.now().strftime("%S")
-    """
-    if current_time == "00":
-        times = 1
-        times_kuku(times)
-    elif current_time == "10":
-        times = 2
-        print(times)
-        times_kuku(times)
-    elif current_time == "20":
-        times = 3
-        print(times)
-        times_kuku(times)
-    elif current_time == "30":
-        times = 4
-        print(times)
-        times_kuku(times)
-    elif current_time == "40":
-        times = 5
-        print(times)
-        times_kuku(times)
-    elif current_time == "50":
-        times = 6
-        print(times)
-        times_kuku(times)
-    """
