@@ -29,13 +29,11 @@ def quarterly_alarms():
     if current_time in alarms:
         play_kuku_sound()
 
+
 def hourly_alarms():
     """Make kukuk sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
 
-    if current_time == "00:00:00" or current_time == "12:00:00":
-        for i in range(0, 12):
-            play_kuku_sound()
     if current_time == "01:00:00" or current_time == "13:00:00":
         for i in range(0, 1):
             play_kuku_sound()
@@ -68,4 +66,7 @@ def hourly_alarms():
             play_kuku_sound()
     if current_time == "11:00:00" or current_time == "23:00:00":
         for i in range(0, 11):
+            play_kuku_sound()
+    if current_time == "12:00:00" or current_time == "00:00:00":
+        for i in range(0, 12):
             play_kuku_sound()
