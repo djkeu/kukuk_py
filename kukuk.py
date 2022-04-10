@@ -32,7 +32,7 @@ class Kukuk:
             quarterly_alarms()
             hourly_alarms()
             # minutely_alarms_v1()
-            minutely_alarms_v2()
+            # minutely_alarms_v2()
 
             self.update_screen()
 
