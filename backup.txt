@@ -1,7 +1,7 @@
 # alarms.py
 
 def minutely_alarms():
-    """For testing purposes."""
+    """Sound alarm every ten seconds for testing purposes."""
     current_time = datetime.now().strftime("%S")
     times = 0
 
