@@ -4,6 +4,7 @@ ToDo kukuk.py
 ToDo:
 - Find alternative to pygame
 - Use turtle to draw a cuckoo
+    Use pygame.draw instead of turtle
 - Move cuckoo to cuckoo.py
 
 
