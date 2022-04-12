@@ -58,22 +58,3 @@ def hourly_alarms():
         times = 12
 
     times_kuku(times)
-
-
-def minutely_alarms():
-    """For testing purposes."""
-    current_time = datetime.now().strftime("%S")
-    times = 0
-
-    if current_time == "10":
-        times = 1
-    elif current_time == "20":
-        times = 2
-    elif current_time == "30":
-        times = 3
-    elif current_time == "40":
-        times = 4
-    elif current_time == "50":
-        times = 5
-
-    times_kuku(times)
