@@ -9,4 +9,4 @@ class Settings:
         self.window_caption = "Kukuk"
 
         # Sound settings
-        self.kuku_sound = 'sounds/keukuk04.wav'
+        self.kuku_sound = 'sounds/keukuk03.wav'
