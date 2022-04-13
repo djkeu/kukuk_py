@@ -14,4 +14,8 @@ Tutorial 0
 Tutorial 2 - Making it interesting
     - What was generated
     - Adding some content of our own
-    -
+    - Next steps
+
+Tutorial 3 - Packaging for distribution
+    - Creating your application scaffold
+    - 
