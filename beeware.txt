@@ -1,0 +1,11 @@
+Beeware: 
+
+Tutorial 0 
+    - Install dependencies for Beeware
+    - set up a virtual environment
+
+- Tutorial 1 - Your first app
+    - Install the Beeware tools
+        - Done: Install Briefcase
+        - Bootstrap a new project
+        - 
