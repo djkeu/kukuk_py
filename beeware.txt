@@ -6,6 +6,11 @@ Tutorial 0
 
 - Tutorial 1 - Your first app
     - Install the Beeware tools
-        - Done: Install Briefcase
-        - Bootstrap a new project
-        - 
+    - Install Briefcase
+    - Bootstrap a new project
+    - Run the app in developer mode
+    - Next steps
+
+Tutorial 2 - Making it interesting
+    - What was generated
+    -
