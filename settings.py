@@ -12,4 +12,4 @@ class Settings:
         self.kuku_sound = 'sounds/keukuk03.wav'
 
         # Draw settings
-        
+        self.first_color = (250, 250, 250)
