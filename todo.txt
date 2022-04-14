@@ -6,7 +6,8 @@ ToDo:
     - beeware.txt
 - Find alternative to pygame
 - Use turtle to draw a cuckoo
-    Use pygame.draw instead of turtle
+    - Use pygame.draw instead of turtle
+    - Find out why it's not working
 - Move cuckoo to cuckoo.py
 
 
