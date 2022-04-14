@@ -1,11 +1,15 @@
 import pygame
-pygame.init()
+from settings import Settings
 
-screen = pygame.display.set_mode((500, 500))
-first_color = (250, 250,250)
 
 def draw_lines():
     """Draw stuff with pygame.draw."""
+    pygame.init()
+
+    settings = Settings()
+    screen = pygame.display.set_mode(settings.window_size)
+    first_color = settings.first_color
+
     size = (200, 200)
     points = [(125, 0), (50, 125), (25, 150), (0, 125)]
 
