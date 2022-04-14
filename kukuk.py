@@ -14,20 +14,12 @@ class Kukuk:
 
         self.screen = pygame.display.set_mode(self.settings.window_size)
         pygame.display.set_caption(self.settings.window_caption)
+
         self.first_color = self.settings.first_color
 
-    def draw_lines(self):
-        """Draw stuff with pygame.draw."""
-        self.size = (500, 500)
-
-        self.line = pygame.Surface(self.size)
-        pygame.draw.line(self.line, self.first_color, (0, 0), (500, 500))  # Start at topleft and ends at bottomright.
-    
     def update_screen(self):
         """Update screen, flip to new screen."""
         self.screen.fill(self.settings.bg_color)
-        self.draw_lines()
-
 
         pygame.display.flip()
 
