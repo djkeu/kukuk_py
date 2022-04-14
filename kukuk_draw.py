@@ -10,7 +10,7 @@ def draw_lines():
     screen = pygame.display.set_mode(settings.window_size)
     first_color = settings.first_color
 
-    size = (200, 200)
+    size = settings.window_size
     points = [(125, 0), (50, 125), (25, 150), (0, 125)]
 
     lines = pygame.Surface(size)
