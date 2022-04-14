@@ -14,6 +14,7 @@ class Kukuk:
 
         self.screen = pygame.display.set_mode(self.settings.window_size)
         pygame.display.set_caption(self.settings.window_caption)
+        self.first_color = self.settings.first_color
 
     def update_screen(self):
         """Update screen, flip to new screen."""
