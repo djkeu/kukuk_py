@@ -26,6 +26,8 @@ class Kukuk:
     def update_screen(self):
         """Update screen, flip to new screen."""
         self.screen.fill(self.settings.bg_color)
+        self.draw_lines()
+
 
         pygame.display.flip()
 
