@@ -31,14 +31,11 @@ def hourly_alarms():
     """Play kuku sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
     times = 0
+    mins_secs = ":00:00"
 
-    # time = ""
-    # time = "01" + time
-    # if current_time == time:
-    #     pass
 
     # use range() ?
-    mins_secs = ":00:00"
+
 
     if current_time == f"01{mins_secs}" or current_time == f"13{mins_secs}":
         times = 1
