@@ -72,17 +72,17 @@ def hourly_alarms_test():
     times = 0
     mins_secs = ":00:00"
 
-    pm_times = range(1, 13)
-    am_times = range(13, 25)
+    pm_hours = range(1, 13)
+    am_hours = range(13, 25)
 
-    for i in pm_times:
+    for i in pm_hours:
         hour = f"{i:02}"
 
         if current_time == f"{hour}{mins_secs}":
             times = i
             times_kuku(times)
 
-    for i in am_times:
+    for i in am_hours:
         hour = f"{i:02}"
         if current_time == f"{hour}{mins_secs}":
             times = (i - 12)
