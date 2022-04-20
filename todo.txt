@@ -3,7 +3,6 @@ ToDo kukuk.py
 
 ToDo:
 - Use Toga for the interface instead of pygame
-- Have time checked only once a minute
 
 
 Done:
