@@ -1,7 +1,7 @@
 import pygame
 
 from settings import Settings
-from alarms import quarterly_alarms, hourly_alarms
+from alarms import quarterly_alarms, hourly_alarms_test
 
 
 class Kukuk:
@@ -34,7 +34,7 @@ class Kukuk:
                         running = False
 
             quarterly_alarms()
-            hourly_alarms()
+            hourly_alarms_test()
 
             self.update_screen()
 
