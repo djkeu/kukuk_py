@@ -69,7 +69,7 @@ def hourly_alarms():
 def hourly_alarms_test():
     """Play kuku sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
-    times = 0
+    # times = 0  # Probably abundant, awaiting refactoring
     mins_secs = ":00:00"
 
     pm_hours = range(1, 13)
