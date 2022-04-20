@@ -2,11 +2,7 @@ ToDo kukuk.py
 
 
 ToDo:
-- Beeware
-    - beeware.txt
-
-- Use pygame.draw to draw a logo
-    - Create kukuk_draw.py 
+- Use Toga for the interface instead of pygame
 
 
 Done:
