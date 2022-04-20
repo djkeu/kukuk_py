@@ -3,6 +3,7 @@ ToDo kukuk.py
 
 ToDo:
 - Use Toga for the interface instead of pygame
+- Use variable to store :00:00 in hourly_alarms()
 
 
 Done:
