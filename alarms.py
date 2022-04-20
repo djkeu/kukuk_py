@@ -32,38 +32,37 @@ def hourly_alarms():
     current_time = datetime.now().strftime("%H:%M:%S")
     times = 0
 
-    # time = ":00:00"
+    # time = ""
     # time = "01" + time
     # if current_time == time:
     #     pass
 
     # use range() ?
+    mins_secs = ":00:00"
 
-
-
-    if current_time == "01:00:00" or current_time == "13:00:00":
+    if current_time == f"01{mins_secs}" or current_time == f"13{mins_secs}":
         times = 1
-    elif current_time == "02:00:00" or current_time == "14:00:00":
+    elif current_time == f"02{mins_secs}" or current_time == f"14{mins_secs}":
         times = 2
-    elif current_time == "03:00:00" or current_time == "15:00:00":
+    elif current_time == f"03{mins_secs}" or current_time == f"15{mins_secs}":
         times = 3
-    elif current_time == "04:00:00" or current_time == "16:00:00":
+    elif current_time == f"04{mins_secs}" or current_time == f"16{mins_secs}":
         times = 4
-    elif current_time == "05:00:00" or current_time == "17:00:00":
+    elif current_time == f"05{mins_secs}" or current_time == f"17{mins_secs}":
         times = 5
-    elif current_time == "06:00:00" or current_time == "18:00:00":
+    elif current_time == f"06{mins_secs}" or current_time == f"18{mins_secs}":
         times = 6
-    elif current_time == "07:00:00" or current_time == "19:00:00":
+    elif current_time == f"07{mins_secs}" or current_time == f"19{mins_secs}":
         times = 7
-    elif current_time == "08:00:00" or current_time == "20:00:00":
+    elif current_time == f"08{mins_secs}" or current_time == f"20{mins_secs}":
         times = 8
-    elif current_time == "09:00:00" or current_time == "21:00:00":
+    elif current_time == f"09{mins_secs}" or current_time == f"21{mins_secs}":
         times = 9
-    elif current_time == "10:00:00" or current_time == "22:00:00":
+    elif current_time == f"10{mins_secs}" or current_time == f"22{mins_secs}":
         times = 10
-    elif current_time == "11:00:00" or current_time == "23:00:00":
+    elif current_time == f"11{mins_secs}" or current_time == f"23{mins_secs}":
         times = 11
-    elif current_time == "12:00:00" or current_time == "00:00:00":
+    elif current_time == f"12{mins_secs}" or current_time == f"00{mins_secs}":
         times = 12
 
     times_kuku(times)
