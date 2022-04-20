@@ -32,6 +32,15 @@ def hourly_alarms():
     current_time = datetime.now().strftime("%H:%M:%S")
     times = 0
 
+    # time = ":00:00"
+    # time = "01" + time
+    # if current_time == time:
+    #     pass
+
+    # use range() ?
+
+
+
     if current_time == "01:00:00" or current_time == "13:00:00":
         times = 1
     elif current_time == "02:00:00" or current_time == "14:00:00":
