@@ -19,7 +19,6 @@ class Kukuk:
             hourly_alarms()
 
 
-
 if __name__ == '__main__':
     ku = Kukuk()
     ku.run_clock()
