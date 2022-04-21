@@ -8,7 +8,6 @@ class Kukuk:
     def __init__(self) -> None:
         """Initialize clock."""
         self.settings = Settings()
-        self.kuku_sound = 'sounds/keukuk03.wav'
 
     def run_clock(self):
         """Start the loop for the clock."""
