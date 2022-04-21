@@ -16,7 +16,7 @@ class Kukuk():
         while running:
             quarterly_alarms()
             hourly_alarms()
-            minutely_alarms
+            minutely_alarms()
 
 
 if __name__ == '__main__':
