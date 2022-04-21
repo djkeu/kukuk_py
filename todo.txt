@@ -3,7 +3,7 @@ ToDo kukuk.py
 
 ToDo:
 - Use Toga for the interface instead of pygame
-- Use range() to get a table of times: Done
+- Use range() to get two lists of hours (am/pm): Done
     - Use one list to hold all hours
 
 
