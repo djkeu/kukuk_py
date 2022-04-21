@@ -1,3 +1,4 @@
+from os import times
 import time
 from datetime import datetime
 
@@ -42,4 +43,17 @@ def hourly_alarms():
         hour = f"{i:02}"
 
         if current_time == f"{hour}:00:00":
+            times_kuku(times)
+
+
+def minutely_alarms():
+    """Sound alarm every ten seconds for testing purposes."""
+    current_time = datetime.now().strftime("%S")
+    intervals = (10, 20, 30, 40, 50)
+
+    for i in intervals:
+        times = int(i / 10)
+        seconds = f"{i:02}"
+
+        if current_time == f"{seconds}":
             times_kuku(times)
