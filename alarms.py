@@ -55,19 +55,15 @@ def hourly_alarms():
     current_time = datetime.now().strftime("%H:%M:%S")
     mins_secs = ":00:00"
 
-    pm_hours = range(1, 13)
-    am_hours = range(13, 25)
+    hours = range(1, 25)
 
-    for i in pm_hours:
-        hour = f"{i:02}"
-
-        if current_time == f"{hour}{mins_secs}":
+    for i in hours:
+        if i < 13:
             times = i
-            times_kuku(times)
-
-    for i in am_hours:
-        hour = f"{i:02}"
-        if current_time == f"{hour}{mins_secs}":
+        else:
             times = (i - 12)
 
+        hour = f"{i:02}"
+
+        if current_time == f"{hour}{mins_secs}":
             times_kuku(times)
