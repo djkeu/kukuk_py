@@ -10,11 +10,6 @@ class Kukuk:
         self.settings = Settings()
         self.kuku_sound = 'sounds/keukuk03.wav'
 
-    def update_screen(self):
-        """Update screen, flip to new screen."""
-        self.screen.fill(self.settings.bg_color)
-
-
     def run_clock(self):
         """Start the loop for the clock."""
         running = True
