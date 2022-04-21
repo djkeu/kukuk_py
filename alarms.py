@@ -27,7 +27,7 @@ def quarterly_alarms():
         play_kuku_sound()
 
 
-def hourly_alarms():
+def hourly_alarms_bak():
     """Play kuku sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
     times = 0
