@@ -1,5 +1,5 @@
 from settings import Settings
-from alarms import quarterly_alarms, hourly_alarms
+from alarms import minutely_alarms, quarterly_alarms, hourly_alarms
 
 
 class Kukuk():
@@ -16,6 +16,7 @@ class Kukuk():
         while running:
             quarterly_alarms()
             hourly_alarms()
+            minutely_alarms
 
 
 if __name__ == '__main__':
