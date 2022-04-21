@@ -2,7 +2,7 @@ from settings import Settings
 from alarms import quarterly_alarms, hourly_alarms
 
 
-class Kukuk:
+class Kukuk():
     """Class to control behaviour of the cuckoo's clock."""
 
     def __init__(self) -> None:
