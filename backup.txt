@@ -144,3 +144,26 @@ def hourly_alarms_bak():
     times_kuku(times)
 
 
+def hourly_alarms():
+    """Play kuku sound according to the hours."""
+    current_time = datetime.now().strftime("%H:%M:%S")
+    # times = 0  # Probably abundant, awaiting refactoring
+    mins_secs = ":00:00"
+
+    pm_hours = range(1, 13)
+    am_hours = range(13, 25)
+
+    for i in pm_hours:
+        hour = f"{i:02}"
+
+        if current_time == f"{hour}{mins_secs}":
+            times = i
+            times_kuku(times)
+
+    for i in am_hours:
+        hour = f"{i:02}"
+        if current_time == f"{hour}{mins_secs}":
+            times = (i - 12)
+
+            times_kuku(times)
+
