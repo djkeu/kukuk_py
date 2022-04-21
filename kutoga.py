@@ -1,18 +1,17 @@
 import toga
-from alarms import quarterly_alarms, hourly_alarms
+from alarms import quarterly_alarms, hourly_alarms, minutely_alarms
 
 
-def build(app):
+def kukuk(app):
     box = toga.Box()
 
-    quarterly_alarms()
-    hourly_alarms()
+    minutely_alarms()
 
     return box
 
 
 def main():
-    return toga.App('Kukuk', 'nl.djkeu.kukuk', startup=build)
+    return toga.App('Kukuk', 'nl.djkeu.kukuk', startup=kukuk)
 
 
 if __name__ == '__main__':
