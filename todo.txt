@@ -2,7 +2,13 @@ ToDo kukuk.py
 
 
 ToDo:
+
+- Get rid of settings.py / settings/Settings
+    - Move sound settings to alarm.py,
+    - Screen settings ??
+
 - Use Toga for the interface instead of pygame
+    - Hm. Lacking docs. Give Kivy a try again.
 
 
 Done:
