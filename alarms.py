@@ -1,16 +1,16 @@
-from os import times
+# from os import times
 import time
 from datetime import datetime
 
 from playsound import playsound
-from settings import Settings
 
 
 def play_kuku_sound():
     """Play kuku sound once."""
-    settings = Settings()
+    kuku_sound = 'sounds/keukuk03.wav'
+
     time.sleep(0.3)
-    playsound(settings.kuku_sound)
+    playsound(kuku_sound)
 
 
 def times_kuku(times):
