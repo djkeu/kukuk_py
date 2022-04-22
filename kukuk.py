@@ -11,8 +11,9 @@ from alarms import quarterly_alarms, hourly_alarms
 class Kukuk(Label):
     """Class to control behaviour of the cuckoo's clock."""
 
-    text = "Kukuk kukuk"
-    text += "\n\n\t\t\t Kukuk \t\t\t"
+    text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+    text += "\n\n\t\t\t   Kukuk   \t\t\t"
+    text += "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
 
     def alarms_callback(dt):
         quarterly_alarms()
