@@ -14,10 +14,10 @@ class Kukuk(Label):
     text = "Kukuk kukuk"
     text += "\n\n\t\t\t Kukuk \t\t\t"
 
-    def my_callback(dt):
+    def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
-    event = Clock.schedule_interval(my_callback, 1 / 30)
+    event = Clock.schedule_interval(alarms_callback, 1 / 30)
 
 
 class KukukApp(App):
