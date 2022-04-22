@@ -7,11 +7,10 @@ ToDo:
     - Move sound settings to alarm.py,
     - Screen settings ??
 
-- Use Toga for the interface instead of pygame
-    - Hm. Lacking docs. Give Kivy a try again.
-
 
 Done:
+- Use Toga for the interface instead of pygame
+    - Hm. Lacking docs. Give Kivy a try again.
 - Use range() to get two lists of hours (am/pm): Done
     - Use one list to hold all hours
 - Use variable to store :00:00 in hourly_alarms()
