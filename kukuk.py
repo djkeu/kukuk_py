@@ -12,8 +12,8 @@ class Kukuk(Label):
     """Class to control behaviour of the cuckoo's clock."""
 
     text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-    text += "\n\n\t\t\t   Kukuk   \t\t\t"
-    text += "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+    text += "\n\n\n\t\t\t   kukuk   \t\t\t"
+    text += "\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
 
     def alarms_callback(dt):
         quarterly_alarms()
