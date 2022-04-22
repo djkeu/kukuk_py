@@ -6,6 +6,8 @@ from kivy.uix.label import Label
 from kivy.clock import Clock
 
 from alarms import quarterly_alarms, hourly_alarms
+from kivy.core.window import Window
+
 
 
 class Kukuk(Label):
@@ -24,6 +26,13 @@ class Kukuk(Label):
 class KukukApp(App):
 
     def build(self):
+        red = 61
+        green = 43
+        blue = 31
+        
+        bg_color = (red/255.0, green/255.0, blue/255.0, 1)
+        Window.clearcolor = bg_color
+
         return Kukuk()
 
 
