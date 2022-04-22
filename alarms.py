@@ -1,4 +1,3 @@
-# from os import times
 import time
 from datetime import datetime
 
