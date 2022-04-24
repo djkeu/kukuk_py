@@ -4,10 +4,9 @@ kivy.require('2.1.0')
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.clock import Clock
-
-from alarms import quarterly_alarms, hourly_alarms
 from kivy.core.window import Window
 
+from alarms import quarterly_alarms, hourly_alarms
 
 
 class Kukuk(Label):
