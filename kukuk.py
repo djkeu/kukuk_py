@@ -10,8 +10,12 @@ from kivy.core.window import Window
 from alarms import quarterly_alarms, hourly_alarms
 
 
-# class Kukuk(Label):
+class MainWidget(Widget):
+    pass
+
+
 class Kukuk():
+# class Kukuk(Label):
     """Class to control behaviour of the cuckoo's clock."""
 
     def alarms_callback(dt):
