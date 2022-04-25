@@ -13,7 +13,6 @@ class BoxLayoutKukuk(BoxLayout):
 
 
 class KukukApp(App):
-    """Model a cucko clock."""
    
     def alarms_callback(dt):
         quarterly_alarms()
