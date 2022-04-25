@@ -3,14 +3,19 @@ kivy.require('2.1.0')
 
 from kivy.app import App
 from kivy.uix.label import Label
+from kivy.uix.boxlayout import BoxLayout
 from kivy.clock import Clock
 from kivy.core.window import Window
 
 from alarms import quarterly_alarms, hourly_alarms
 
 
+class BoxLayoutKukuk(BoxLayout):
+    pass
+
+
 class Klok(Label):
-    """Class to control behaviour of the cuckoo's clock."""
+    """Model the cuckoo's clock."""
 
     text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
     text += "\n\n\n\t\t\t   kukuk   \t\t\t"
