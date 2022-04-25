@@ -4,7 +4,6 @@ kivy.require('2.1.0')
 from kivy.app import App
 from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.button import Button
 from kivy.clock import Clock
 from kivy.core.window import Window
 
@@ -15,10 +14,8 @@ class BoxLayoutKukuk(BoxLayout):
     pass
 
 
-class Klok(Button):
+class Klok():
     pass
-
-    """Model the cuckoo's clock."""
 
     """
     text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
@@ -26,12 +23,10 @@ class Klok(Button):
     text += "\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
     """
 
-    """
     def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
     event = Clock.schedule_interval(alarms_callback, 1 / 30)
-    """
 
 
 class KukukApp(App):
