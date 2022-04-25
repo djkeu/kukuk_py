@@ -2,10 +2,10 @@ import kivy
 kivy.require('2.1.0')
 
 from kivy.app import App
-from kivy.uix.label import Label
+#from kivy.uix.label import Label
 from kivy.uix.boxlayout import BoxLayout
 from kivy.clock import Clock
-from kivy.core.window import Window
+#from kivy.core.window import Window
 
 from alarms import quarterly_alarms, hourly_alarms
 
