@@ -2,6 +2,7 @@ import kivy
 kivy.require('2.1.0')
 
 from kivy.app import App
+from kivy.uix.widget import Widget
 from kivy.uix.label import Label
 from kivy.clock import Clock
 from kivy.core.window import Window
