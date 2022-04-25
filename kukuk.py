@@ -2,32 +2,24 @@ import kivy
 kivy.require('2.1.0')
 
 from kivy.app import App
-from kivy.uix.widget import Widget
-# from kivy.uix.label import Label
+from kivy.uix.label import Label
 from kivy.clock import Clock
 from kivy.core.window import Window
 
 from alarms import quarterly_alarms, hourly_alarms
 
 
-class MainWidget(Widget):
-    pass
-
-
-class Kukuk():
-# class Kukuk(Label):
+class Kukuk(Label):
     """Class to control behaviour of the cuckoo's clock."""
+
+    text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
+    text += "\n\n\n\t\t\t   kukuk   \t\t\t"
+    text += "\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
 
     def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
     event = Clock.schedule_interval(alarms_callback, 1 / 30)
-
-"""
-    text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-    text += "\n\n\n\t\t\t   kukuk   \t\t\t"
-    text += "\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-"""
 
 
 class KukukApp(App):
