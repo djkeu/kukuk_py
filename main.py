@@ -15,7 +15,7 @@ class BoxLayoutKukuk(BoxLayout):
 
 
 class Klok():
-    pass
+    #pass
 
     """
     text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
@@ -39,13 +39,16 @@ class KukukApp(App):
         
         bg_color = (red/255.0, green/255.0, blue/255.0, 1)
         Window.clearcolor = bg_color
-        """
         
+        """
+    """
     def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
     event = Clock.schedule_interval(alarms_callback, 1 / 30)
-        
-    
+    """
+    Klok()    
+
+
 if __name__ == '__main__':
     KukukApp().run()
