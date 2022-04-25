@@ -9,7 +9,7 @@ from kivy.core.window import Window
 from alarms import quarterly_alarms, hourly_alarms
 
 
-class Kukuk(Label):
+class Klok(Label):
     """Class to control behaviour of the cuckoo's clock."""
 
     text = "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
@@ -32,7 +32,7 @@ class KukukApp(App):
         bg_color = (red/255.0, green/255.0, blue/255.0, 1)
         Window.clearcolor = bg_color
 
-        return Kukuk()
+        return Klok()
 
 
 if __name__ == '__main__':
