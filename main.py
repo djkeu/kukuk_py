@@ -12,17 +12,13 @@ class BoxLayoutKukuk(BoxLayout):
     pass
 
 
-class Klok():
-
+class KukukApp(App):
+    """Model a cucko clock."""
+   
     def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
     event = Clock.schedule_interval(alarms_callback, 1 / 30)
-
-
-class KukukApp(App):
-   
-    Klok()    
 
 
 if __name__ == '__main__':
