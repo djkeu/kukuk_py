@@ -4,17 +4,17 @@ from datetime import datetime
 from kivy.core.audio import SoundLoader
 
 
-def play_kuku_sound():
+def kuku_once():
     """Play kuku sound once."""
     kuku_sound = SoundLoader.load('sounds/keukuk03.wav')
     kuku_sound.play()
     time.sleep(1)
 
 
-def times_kuku(times):
+def kuku_times(times):
     """Play kuku sound multiple times in a row."""
     for i in range(0, times):
-        play_kuku_sound()
+        kuku_once()
 
 
 def quarterly_alarms():
@@ -23,7 +23,7 @@ def quarterly_alarms():
     current_time = datetime.now().strftime("%M:%S")
 
     if current_time in alarms:
-        play_kuku_sound()
+        kuku_once()
 
 
 def hourly_alarms():
@@ -41,7 +41,7 @@ def hourly_alarms():
         hour = f"{i:02}"
 
         if current_time == f"{hour}:00:00":
-            times_kuku(times)
+            kuku_times(times)
 
 
 def minutely_alarms():
@@ -54,4 +54,4 @@ def minutely_alarms():
         seconds = f"{i:02}"
 
         if current_time == f"{seconds}":
-            times_kuku(times)
+            kuku_times(times)
