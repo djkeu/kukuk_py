@@ -30,7 +30,7 @@ source.include_patterns = images/*.jpg,sounds/*.wav
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.1
+version = 0.1.2
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -51,7 +51,8 @@ requirements = python3,kivy
 #icon.filename = %(source.dir)s/data/icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = portrait
+# orientation = portrait
+orientation = sensorLandscape
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -61,13 +62,13 @@ orientation = portrait
 #
 
 #
-# author = © Copyright Info
+# author = © Marc Kooij
 
 # change the major version of python used by the app
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 1.9.1
+osx.kivy_version = 2.1.0
 
 #
 # Android specific
