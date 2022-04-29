@@ -1,14 +1,14 @@
 import time
 from datetime import datetime
 
-from kivy.core.audio import SoundLoader
+from playsound import playsound
 
 
 def kuku_once():
     """Play kuku sound once."""
-    kuku_sound = SoundLoader.load('sounds/keukuk06.wav')
-    time.sleep(1)
-    kuku_sound.play()
+    kuku_sound = 'sounds/keukuk06.wav'
+    time.sleep(0.5)
+    playsound(kuku_sound)
 
 
 def kuku_times(times):
