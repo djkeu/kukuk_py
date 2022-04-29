@@ -1,5 +1,8 @@
 # kukuk
 
+First thing to do: display time on screen
+
+
 Check what is actually supposed to go in this README.md
 
 Attempt to write an app the will mimic a cuckoo-clock.
