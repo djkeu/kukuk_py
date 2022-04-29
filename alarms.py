@@ -43,7 +43,7 @@ def hourly_alarms():
 
 
 def minutely_alarms():
-    """Sound alarm every ten seconds, for testing purposes."""
+    """Sound alarm every five seconds, for testing purposes."""
     current_time = datetime.now().strftime("%S")
     intervals = (00, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55)
 
