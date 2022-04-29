@@ -30,9 +30,7 @@ def hourly_alarms():
     """Play kuku sound according to the hours."""
     current_time = datetime.now().strftime("%H:%M:%S")
 
-    hours = range(1, 25)
-
-    for i in hours:
+    for i in range(1, 25):
         if i < 13:
             times = i
         else:
