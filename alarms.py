@@ -7,7 +7,7 @@ from playsound import playsound
 def kuku_once():
     """Play kuku sound once."""
     kuku_sound = 'sounds/keukuk06.wav'
-    time.sleep(0.5)
+    time.sleep(0.3)
     playsound(kuku_sound)
 
 
