@@ -7,7 +7,7 @@ title = Kukuk
 package.name = kukuk
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = nl.djkeu.
+package.domain = nl.djkeu
 
 # (str) Source code where the main.py live
 source.dir = .
