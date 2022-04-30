@@ -7,7 +7,7 @@ from kivy.core.audio import SoundLoader
 
 def kuku_once():
     """Play kuku sound once."""
-    # kuku_sound = 'sounds/keukuk06.wav'
+    # kuku_sound = 'sounds/keukuk06.mp3'
     # time.sleep(0.3)
     # playsound(kuku_sound)
     
