@@ -7,13 +7,14 @@ from playsound import playsound
 
 def kuku_once():
     """Play kuku sound once."""
-    kuku_sound = 'sounds/keukuk06.mp3'
+    kuku_sound = 'sounds/keukuk06.wav'
+
     time.sleep(0.3)
     playsound(kuku_sound)
     
-    #kuku_sound = SoundLoader.load('sounds/keukuk06.wav')
+    #sound = SoundLoader.load(kuku_sound)
     #time.sleep(1)
-    #kuku_sound.play()
+    #sound.play()
  
 
 def kuku_times(times):
