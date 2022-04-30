@@ -11,7 +11,7 @@ def kuku_once():
     # time.sleep(0.3)
     # playsound(kuku_sound)
     
-    kuku_sound = SoundLoader.load('sounds/keukuk06.wav')
+    kuku_sound = SoundLoader.load('sounds/keukuk06.mp3')
     time.sleep(1)
     kuku_sound.play()
  
