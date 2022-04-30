@@ -23,7 +23,7 @@ source.include_patterns = images/*.jpg,sounds/*.wav
 #source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
-#source.exclude_dirs = tests, bin, venv
+source.exclude_dirs = tests, bin, venv, __pycache__, backup
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
