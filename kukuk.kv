@@ -4,10 +4,16 @@ BoxLayoutKukuk:
 
 
 <BoxLayoutKukuk>:
+    orientation: "vertical"
+    canvas.before:
+        Rectangle:
+            # pos: self.pos
+            size: self.size
+            source: 'images/roodKleed.jpg'
+    
+    Label:
+        text: "test"
+        size_hint: 1, .2
     Label:
         text: "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t   kukuk   \t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t"
-        canvas.before:
-            Rectangle:
-                # pos: self.pos
-                size: self.size
-                source: 'images/roodKleed.jpg'
+
