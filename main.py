@@ -1,5 +1,6 @@
 __version__ = "0.1.2"
 
+from tkinter import Button, Label
 import kivy
 kivy.require('2.1.0')
 
@@ -13,14 +14,10 @@ from alarms import quarterly_alarms, hourly_alarms
 
 
 class BoxLayoutKukuk(BoxLayout):
-    pass
-
-
-class Klok(Label):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.now = datetime.now()
-        self.my_label.text = self.now.strftime("%H:%M:%M")
+        klok = Label(text=str(datetime.now.strftime("%H:%M:%M"))
+        self.add_widget(klok)
 
 
 class KukukApp(App):
