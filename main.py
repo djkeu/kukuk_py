@@ -1,13 +1,15 @@
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
-from tkinter import Button, Label
 import kivy
 kivy.require('2.1.0')
 
 from kivy.app import App
+from kivy.clock import Clock
+
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
-from kivy.clock import Clock
+from kivy.uix.button import Button
+from kivy.uix.widget import Widget
 
 from datetime import datetime
 from alarms import quarterly_alarms, hourly_alarms
@@ -16,7 +18,7 @@ from alarms import quarterly_alarms, hourly_alarms
 class BoxLayoutKukuk(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        klok = Label(text=str(datetime.now.strftime("%H:%M:%M"))
+        klok = Label(text="datetime.now(%H:%M:%M)")
         self.add_widget(klok)
 
 
