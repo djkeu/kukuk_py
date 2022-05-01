@@ -8,8 +8,6 @@ from kivy.clock import Clock
 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
-from kivy.uix.button import Button
-from kivy.uix.widget import Widget
 
 from datetime import datetime
 from alarms import quarterly_alarms, hourly_alarms
