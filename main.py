@@ -18,7 +18,11 @@ from alarms import quarterly_alarms, hourly_alarms
 class BoxLayoutKukuk(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        klok = Label(text="datetime.now(%H:%M:%M)")
+        
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        
+        klok = Label(text=current_time)
         self.add_widget(klok)
 
 
