@@ -22,7 +22,7 @@ class BoxLayoutKukuk(BoxLayout):
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
         
-        klok = Label(text=current_time)
+        klok = Label(text=current_time, size_hint=(1, .3))
         self.add_widget(klok)
 
 
