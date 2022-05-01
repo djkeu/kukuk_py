@@ -20,15 +20,19 @@ class BoxLayoutKukuk(BoxLayout):
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
         
-        klok = Label(text=current_time, size_hint=(1, .3))
+        klok = Label(text=f"Kukuk is gestart om {current_time}", size_hint=(1, .3))
         self.add_widget(klok)
 
 
 class KukukApp(App):
+    def klok_callback(dt):
+        BoxLayoutKukuk()
+
     def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
-        
+    
+    event = Clock.schedule_interval(klok_callback, 1 / 30)
     event = Clock.schedule_interval(alarms_callback, 1 / 30)
 
 
