@@ -1,20 +1,16 @@
 import time
 from datetime import datetime
 
-# from kivy.core.audio import SoundLoader
-from playsound import playsound
+from kivy.core.audio import SoundLoader
 
 
 def kuku_once():
     """Play kuku sound once."""
     kuku_sound = 'sounds/keukuk03.wav'
 
-    playsound(kuku_sound)
-    time.sleep(0.3)
-
-    # sound = SoundLoader.load(kuku_sound)
-    # time.sleep(1)
-    # sound.play()
+    sound = SoundLoader.load(kuku_sound)
+    time.sleep(1)
+    sound.play()
  
 
 def kuku_times(times):
@@ -26,12 +22,9 @@ def kuku_times(times):
 def quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     alarms = ("15:00", "30:00", "45:00")
-    #test_alarms = ("05:00", "10:00", "15:00", "20:00", "25:00", "30:00", "35:00", "40:00", "45:00", "50:00", "55:00")
-    
     current_time = datetime.now().strftime("%M:%S")
 
     if current_time in alarms:
-    #if current_time in test_alarms:
         kuku_once()
 
 
