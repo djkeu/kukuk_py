@@ -5,7 +5,6 @@ kivy.require('2.1.0')
 
 from kivy.app import App
 from kivy.clock import Clock
-
 from kivy.uix.boxlayout import BoxLayout
 
 from time import strftime
