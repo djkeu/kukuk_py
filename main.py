@@ -21,7 +21,7 @@ class BoxLayoutKukuk(BoxLayout):
         current_time = now.strftime("%H:%M:%S")
         klok_text = f"Kukuk is gestart om {current_time}"
         
-        klok = Label(text=klok_text, size_hint=(1, .3))
+        klok = Label(text=klok_text, size_hint=(1, .2))
         self.add_widget(klok)
 
 
