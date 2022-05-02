@@ -7,7 +7,6 @@ from kivy.app import App
 from kivy.clock import Clock
 
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.label import Label
 
 from time import strftime
 from alarms import quarterly_alarms, hourly_alarms
