@@ -16,7 +16,7 @@ class BoxLayoutKukuk(BoxLayout):
 
 
 class KukukApp(App):
-    def update_time(self, nap):
+    def update_time(self, i_val):
         self.root.ids.time.text = strftime("%H:%M:%S")
 
     def on_start(self):
