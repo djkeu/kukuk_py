@@ -25,13 +25,13 @@ def kuku_times(times):
 
 def quarterly_alarms():
     """Play kuku sound every 15 minutes."""
-    #alarms = ("15:00", "30:00", "45:00")
-    test_alarms = ("05:00", "10:00", "15:00", "20:00", "25:00", "30:00", "35:00", "40:00", "45:00", "50:00", "55:00")
+    alarms = ("15:00", "30:00", "45:00")
+    #test_alarms = ("05:00", "10:00", "15:00", "20:00", "25:00", "30:00", "35:00", "40:00", "45:00", "50:00", "55:00")
     
     current_time = datetime.now().strftime("%M:%S")
 
-    # if current_time in alarms:
-    if current_time in test_alarms:
+    if current_time in alarms:
+    #if current_time in test_alarms:
         kuku_once()
 
 
