@@ -9,31 +9,25 @@ from kivy.clock import Clock
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
 
-from datetime import datetime
+from time import strftime
 from alarms import quarterly_alarms, hourly_alarms
 
 
 class BoxLayoutKukuk(BoxLayout):
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        klok_text = f"Kukuk is gestart om {current_time}"
-        
-        klok = Label(text=klok_text, size_hint=(1, .2))
-        self.add_widget(klok)
+    pass
 
 
 class KukukApp(App):
-    def klok_callback(dt):
-        BoxLayoutKukuk()
+    def update_time(self, nap):
+        self.root.ids.time.text = strftime("%H:%M:%S")
+
+    def on_start(self):
+        Clock.schedule_interval(self.update_time, 1)
 
     def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
     
-    event = Clock.schedule_interval(klok_callback, 1 / 30)
     event = Clock.schedule_interval(alarms_callback, 1 / 30)
 
 
