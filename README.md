@@ -1,13 +1,11 @@
 # kukuk
 
-First thing to do: display time on screen
+---
+ToDo:
+Send notifications to sound the alarm to prevent screensaver from stopping the program.
 
-
+---
 Check what is actually supposed to go in this README.md
 
-Attempt to write an app the will mimic a cuckoo-clock.
-Supposed to go once every 15 minutes and the number of times the hour of the day says every hour.
-
-Create a Python program, check which modules are needed and build from there.
-Create index.py to keep track of the structure
-Create kukuk.py, the main program
+Attempt to write an app to mimic a cuckoo-clock.
+Supposed to go once every 15 minutes and tell the hour of the day.
