@@ -1,7 +1,8 @@
 # Kukuk
 
-Always wanted to have a cuckoo clock but simply couldn't afford one?
+Switched to Kotlin for better performance on Android, repository: kukuk-android
 
+Always wanted to have a cuckoo clock but simply couldn't afford one?
 Well, bless the marvels of the modern world, you can have one on your phone now. For Free!
 
 
