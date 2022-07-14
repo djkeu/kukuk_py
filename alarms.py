@@ -10,8 +10,8 @@ def kuku_once():
     kuku_sound = 'sounds/keukuk03.wav'
 
     sound = SoundLoader.load(kuku_sound)
-    time.sleep(1)
     sound.play()
+    time.sleep(1)
  
 
 def kuku_times(times):
