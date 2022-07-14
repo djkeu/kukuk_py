@@ -10,7 +10,7 @@ def kuku_once():
 
     sound = SoundLoader.load(kuku_sound)
     sound.play()
-    time.sleep(1)
+    time.sleep(1.1)
  
 
 def quarterly_alarms():
