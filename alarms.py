@@ -45,7 +45,10 @@ def hourly_alarms():
 
 
 def minutely_alarms():
-    """ Play kuku sound according to the minutes."""
+    """ 
+    For testing purposes only.
+    Play kuku sound according to the minutes.
+    """
     current_time = datetime.now().strftime("%M:%S")
 
     for i in range(1, 60):
