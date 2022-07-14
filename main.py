@@ -29,7 +29,7 @@ class KukukApp(App):
         hourly_alarms()
         # minutely_alarms()
     
-    event = Clock.schedule_interval(alarms_callback, 1 / 30)
+    event = Clock.schedule_interval(alarms_callback, 1 / 5)
 
 
 if __name__ == '__main__':
