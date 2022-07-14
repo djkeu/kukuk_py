@@ -10,7 +10,7 @@ from kivy.uix.boxlayout import BoxLayout
 
 from time import strftime
 from alarms import quarterly_alarms, hourly_alarms
-# from alarms import minutely_alarms
+from alarms import minutely_alarms
 
 
 class BoxLayoutKukuk(BoxLayout):
@@ -27,7 +27,7 @@ class KukukApp(App):
     def alarms_callback(dt):
         quarterly_alarms()
         hourly_alarms()
-        # minutely_alarms()
+        minutely_alarms()
     
     event = Clock.schedule_interval(alarms_callback, 1 / 30)
 
