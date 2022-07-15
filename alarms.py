@@ -10,7 +10,6 @@ def kuku_once():
 
     sound = SoundLoader.load(kuku_sound)
     sound.play()
-    time.sleep(1.1)
  
 
 def quarterly_alarms():
@@ -26,6 +25,7 @@ def kuku_times(times):
     """Play kuku sound multiple times in a row."""
     for i in range(0, times):
         kuku_once()
+        time.sleep(1.1)
 
 
 def hourly_alarms():
