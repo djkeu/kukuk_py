@@ -5,7 +5,7 @@ from kivy.core.audio import SoundLoader
 
 
 def kuku_once():
-    """Play kuku sound once."""
+    """ Play kuku sound once. """
     kuku_sound = 'sounds/keukuk03.wav'
 
     sound = SoundLoader.load(kuku_sound)
@@ -13,7 +13,7 @@ def kuku_once():
  
 
 def quarterly_alarms():
-    """Play kuku sound every 15 minutes."""
+    """ Play kuku sound every 15 minutes. """
     alarms = ("15:00", "30:00", "45:00")
     current_time = datetime.now().strftime("%M:%S")
 
@@ -22,14 +22,14 @@ def quarterly_alarms():
 
 
 def kuku_times(times):
-    """Play kuku sound multiple times in a row."""
+    """ Play kuku sound multiple times in a row. """
     for i in range(0, times):
         kuku_once()
         time.sleep(1.1)
 
 
 def hourly_alarms():
-    """Play kuku sound according to the hours."""
+    """ Play kuku sound according to the hours. """
     current_time = datetime.now().strftime("%H:%M:%S")
 
     for i in range(1, 25):
@@ -44,10 +44,7 @@ def hourly_alarms():
 
 
 def minutely_alarms():
-    """ 
-    For testing purposes only.
-    Play kuku sound according to the minutes.
-    """
+    """ Play kuku sound according to the minutes. """
     current_time = datetime.now().strftime("%M:%S")
 
     for i in range(1, 60):
