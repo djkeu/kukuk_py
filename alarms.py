@@ -38,8 +38,8 @@ def hourly_alarms():
         else:
             times = (i - 12)
 
-        hour = f"{i:02}"
-        if current_time == f"{hour}:00:00":
+        hour = f"{i:02}:00:00"
+        if current_time == hour:
             kuku_times(times)
 
 
