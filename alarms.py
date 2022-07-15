@@ -63,7 +63,7 @@ def minutely_alarms():
             times = i - 40
         else:
             times = i - 50
-        
-        minute = f"{i:01}"
-        if current_time == f"{minute}:00":
+
+        minute = f"{i:02}:00"
+        if current_time == minute:
             kuku_times(times)
