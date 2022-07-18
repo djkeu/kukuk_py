@@ -42,6 +42,7 @@ def test_quarterly_alarms_v2():
 
     if current_quarterly_time in alarms:
         kuku_once()
+        print(f"Alarm sounds at: {current_quarterly_time}")
 
 
 def test_quarterly_alarms_v1():
