@@ -26,7 +26,7 @@ def quarterly_alarms():
         print(f"Alarm sounded at: {current_quarterly_time}")
 
 
-def test_quarterly_alarms_v1():
+def test_quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     current_secondly_time = datetime.now().strftime("%S.%f")[: -5]
     # print(current_secondly_time)
