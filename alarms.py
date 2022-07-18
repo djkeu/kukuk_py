@@ -30,7 +30,7 @@ def test_quarterly_alarms():
     if current_secondly_time in alarms:
         kuku_once()
         print(current_secondly_time)
-        time.sleep(1)
+        # time.sleep(1)
 
 
 def kuku_times(times):
