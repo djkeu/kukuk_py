@@ -40,36 +40,7 @@ def hourly_alarms():
             times = (i - 12)
 
         hour = f"{i:02}:00:00"
-
+        
         if hour == current_hourly_time:
             kuku_times(times)
             print(f"Hourly alarms sounded {times} times at: {current_hourly_time}")
-
-
-def test_hourly_alarms():
-    """ Play kuku sound according to the minutes. """
-    # For testing purposes only
-    current_minutely_time = datetime.now().strftime("%M:%S")
-
-    minute = f"{i:02}:00"
-   
-    if current_minutely_time == minute:
-        for i in range(1, 60):
-            if i < 11:
-                times = i
-            elif i < 21:
-                times = i - 10
-            elif i < 31:
-                times = i - 20
-            elif i < 41:
-                times = i - 30
-            elif i < 51:
-                times = i - 40
-            else:
-                times = i - 50
-
-        print(f"Minute: {minute}")
-        print(f"Current time: {current_minutely_time}")
-        print(f"Times:  {times}")
-        kuku_times(times)
-
