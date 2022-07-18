@@ -9,9 +9,9 @@ from kivy.clock import Clock
 from kivy.uix.boxlayout import BoxLayout
 
 from time import strftime
-# from alarms import quarterly_alarms 
+from alarms import quarterly_alarms 
 from alarms import hourly_alarms
-from alarms import test_quarterly_alarms_v2
+# from alarms import test_quarterly_alarms_v2
 # from alarms import test_hourly_alarms
 
 
