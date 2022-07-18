@@ -1,0 +1,28 @@
+#:kivy 2.1.0
+
+BoxLayoutKukuk:
+
+
+<BoxLayoutKukuk>:
+    orientation: "vertical"
+    canvas.before:
+        Rectangle:
+            # pos: self.pos
+            size: self.size
+            source: 'images/roodKleed.jpg'
+    
+    Label:
+        id: time
+        text: '00:00:00'
+        size_hint: 1, .9
+        font_size: "30dp"
+    
+    Label:
+        text: "kukuk"
+        size_hint: 1, .2
+        font_size: "80dp"
+        bold: True
+        italic: True
+    Label:
+        text: ""  # for displaying purposes, replace with BoxLayout later
+
