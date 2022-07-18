@@ -57,7 +57,7 @@ def hourly_alarms():
         hour = f"{i:02}:00:00"
         if current_hourly_time == hour:
             kuku_times(times)
-            print(f"Hourly alarms sounded {times} times at {current_hourly_time}")
+            print(f"Hourly alarms sounded {times} times at: {current_hourly_time}")
 
 
 def test_hourly_alarms():
