@@ -29,13 +29,11 @@ def quarterly_alarms():
 def test_quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     current_secondly_time = datetime.now().strftime("%S.%f")[: -5]
-    # print(current_secondly_time)
     alarms = ("06.2", "16.2", "26.2", "36.2", "46.2", "56.2")
 
     if current_secondly_time in alarms:
         kuku_once()
         print(current_secondly_time)
-        # time.sleep(1)
 
 
 def kuku_times(times):
