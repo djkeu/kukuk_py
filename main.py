@@ -10,7 +10,8 @@ from kivy.uix.boxlayout import BoxLayout
 
 from time import strftime
 from alarms import quarterly_alarms, hourly_alarms
-# from alarms import test_hourly_alarms, test_quarterly_alarms
+# from alarms import test_quarterly_alarms
+# from alarms import test_hourly_alarms
 
 
 class BoxLayoutKukuk(BoxLayout):
