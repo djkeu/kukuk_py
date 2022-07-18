@@ -41,7 +41,7 @@ def kuku_times(times):
 
 def hourly_alarms():
     """ Play kuku sound according to the hours. """
-    current_time = datetime.now().strftime("%H:%M:%S")
+    current_hourly_time = datetime.now().strftime("%H:%M:%S")
 
     for i in range(1, 25):
         if i < 13:
@@ -50,7 +50,7 @@ def hourly_alarms():
             times = (i - 12)
 
         hour = f"{i:02}:00:00"
-        if current_time == hour:
+        if current_hourly_time == hour:
             kuku_times(times)
 
 
