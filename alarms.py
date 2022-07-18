@@ -76,6 +76,6 @@ def test_hourly_alarms():
         minute = f"{i:02}:00"
         if current_minutely_time == minute:
             print(f"Minute: {minute}")
-            print(f"Current time: {current_time}")
+            print(f"Current time: {current_minutely_time}")
             print(f"Times:  {times}")
             kuku_times(times)
