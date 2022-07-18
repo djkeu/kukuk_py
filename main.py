@@ -9,8 +9,9 @@ from kivy.clock import Clock
 from kivy.uix.boxlayout import BoxLayout
 
 from time import strftime
-from alarms import quarterly_alarms, hourly_alarms
-# from alarms import test_quarterly_alarms
+# from alarms import quarterly_alarms 
+from alarms import hourly_alarms
+from alarms import test_quarterly_alarms
 # from alarms import test_hourly_alarms
 
 
@@ -26,10 +27,10 @@ class KukukApp(App):
         Clock.schedule_interval(self.update_time, 1)
 
     def alarms_callback(dt):
-        quarterly_alarms()
+        # quarterly_alarms()
         hourly_alarms()
-        #test_hourly_alarms()
-        #test_quarterly_alarms
+        test_quarterly_alarms
+        # test_hourly_alarms()
     
     event = Clock.schedule_interval(alarms_callback, 1 / 5)
 
