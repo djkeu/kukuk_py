@@ -22,7 +22,7 @@ def quarterly_alarms():
         print(f"Alarm sounded at: {current_quarterly_time}")
 
 
-def kuku_times(times):
+def multiple_kukus(times):
     """ Play kuku sound multiple times in a row. """
     for i in range(0, times):
         kuku_once()
@@ -42,5 +42,5 @@ def hourly_alarms():
         hour = f"{i:02}:00:00"
         
         if hour == current_hourly_time:
-            kuku_times(times)
+            multiple_kukus(times)
             print(f"Hourly alarms sounded {times} times at: {current_hourly_time}")
