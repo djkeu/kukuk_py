@@ -4,6 +4,7 @@ from datetime import datetime
 from kivy.core.audio import SoundLoader
 
 
+# Sound section
 def kuku_once():
     """ Play kuku sound once. """
     kuku_sound_file = 'sounds/keukuk03.wav'
