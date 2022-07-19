@@ -33,8 +33,10 @@ def hourly_alarms():
     """ Play kuku sound according to the hours. """
     current_hourly_time = datetime.now().strftime("%H:%M:%S")
 
-    for i in range(1, 25):
-        if i < 13:
+    for i in range(0, 24):
+        if i == 0:
+            times = 12
+        elif i < 13:
             times = i
         else:
             times = (i - 12)
