@@ -32,7 +32,7 @@ class KukukApp(App):
         # test_quarterly_alarms()
         # test_hourly_alarms()
     
-    event = Clock.schedule_interval(alarms_callback, 1 / 11)
+    event = Clock.schedule_interval(alarms_callback, 1 / 10.01)
 
 
 if __name__ == '__main__':

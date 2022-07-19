@@ -91,7 +91,7 @@ Alarm sounded at: 45:00.1
 
 === 
 Double alarm at 45:00.1, probably because higher frequency of alarms_callback.
-Changing to 1 /  11
+Changing to 1 /  10.01
 ===
 
 [INFO   ] [Base        ] Start application main loop
