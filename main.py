@@ -1,7 +1,6 @@
-__version__ = "0.1.5"
+__version__ = "0.1.6"
 
 import kivy
-
 kivy.require('2.1.0')
 
 from kivy.app import App
