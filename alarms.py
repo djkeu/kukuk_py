@@ -20,6 +20,7 @@ def multiple_kukus(times):
         time.sleep(1.1)
 
 
+# Alarms section
 def quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     current_quarterly_time = datetime.now().strftime("%M:%S.%f")[: -5]
