@@ -8,8 +8,8 @@ def kuku_once():
     """ Play kuku sound once. """
     kuku_sound_file = 'sounds/keukuk03.wav'
 
-    sound = SoundLoader.load(kuku_sound_file)
-    sound.play()
+    kuku_sound = SoundLoader.load(kuku_sound_file)
+    kuku_sound.play()
  
 
 def quarterly_alarms():
