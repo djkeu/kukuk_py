@@ -69,3 +69,17 @@ Alarm sounded at: 30:00.1
 Alarm sounded at: 45:00.1
 [INFO   ] [Base        ] Leaving application in progress...
 
+[INFO   ] [Base        ] Start application main loop
+Alarm sounded at: 15:00.1
+Alarm sounded at: 30:00.1
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 6 times at: 18:00:00
+Alarm sounded at: 15:00.1
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 7 times at: 19:00:00
+[INFO   ] [Base        ] Leaving application in progress...
+
+=== Missed alarm at 30.00.1, set alarms_callback to 1 /  15 ===
+
+
+[INFO   ] [Base        ] Start application main loop
