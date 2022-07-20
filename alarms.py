@@ -47,4 +47,5 @@ def hourly_alarms():
         
         if hour == current_hourly_time:
             multiple_kukus(times)
-            print(f"Hourly alarms sounded {times} times at: {current_hourly_time}")
+            print(f"\nHourly alarms sounded {times} times at: {current_hourly_time}")
+            print(f"Hourly alarms are alright!!\n")
