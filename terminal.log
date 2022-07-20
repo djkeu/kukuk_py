@@ -48,8 +48,6 @@ Alarm sounded at: 15:00.1
 - No further action
 
 === Double alarm at 19:30:00.1 ===
--  Probably not related to the alarms_callback interval (1 / 10.01) in main.py 
-- Can be tested on a minutely basis
-
-
+Actions:
+- Test on a minutely instead of hourly basis
 
