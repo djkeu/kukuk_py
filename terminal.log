@@ -1,20 +1,3 @@
-[INFO   ] [Base        ] Start application main loop
-Hourly alarms sounded 8 times at: 20:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 9 times at: 21:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 10 times at: 22:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 11 times at: 23:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
 [INFO   ] [Base        ] Leaving application in progress...
 
 
@@ -25,6 +8,13 @@ Possible solutions:
 
 
 [INFO   ] [Base        ] Start application main loop
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 5 times at: 17:00:00
+Alarm sounded at: 15:00.1
 Alarm sounded at: 30:00.1
-
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 6 times at: 18:00:00
+Alarm sounded at: 15:00.1
+Alarm sounded at: 30:00.1
+Alarm sounded at: 45:00.1
 
