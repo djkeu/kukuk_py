@@ -1,33 +1,3 @@
-[INFO   ] [Logger      ] Record log in C:\Users\Gebruiker\.kivy\logs\kivy_22-07-18_46.txt
-
-[INFO   ] [Base        ] Start application main loop
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 6 times at: 18:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 7 times at: 19:00:00
-[INFO   ] [Base        ] Leaving application in progress...
-
-
-=== Missed alarm at 30.00.1, set alarms_callback to 1 /  15 ===
-
-
-[INFO   ] [Base        ] Start application main loop
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Alarm sounded at: 45:00.1
-[INFO   ] [Base        ] Leaving application in progress...
-
-
-=== 
-Double alarm at 45:00.1, probably because higher frequency of alarms_callback.
-Changing to 1 /  10.01
-===
-
-
 [INFO   ] [Base        ] Start application main loop
 Hourly alarms sounded 8 times at: 20:00:00
 Alarm sounded at: 15:00.1
@@ -50,7 +20,11 @@ Alarm sounded at: 45:00.1
 
 ===  current_hourly_time never reaches 24:00, 23:59  -> 00:00 ===
 Possible solutions:
-- Set all alarms to :59.99
-- Start i-range with 0, use if i= 0 to set midnight alarms
+- Set all alarms to :59.99 (not used)
+- Start i-range with 0, use 'if i == 0:' to set midnight alarms (used)
+
+
+[INFO   ] [Base        ] Start application main loop
+Alarm sounded at: 30:00.1
 
 
