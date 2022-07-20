@@ -50,7 +50,6 @@ Alarm sounded at: 15:00.1
 === Double alarm at 19:30:00.1 ===
 -  Probably not related to the alarms_callback interval (1 / 10.01) in main.py 
 - Can be tested on a minutely basis
-- Set milliseconds in quarterly alarms to two digits
 
 
 
