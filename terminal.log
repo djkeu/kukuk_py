@@ -17,4 +17,39 @@ Hourly alarms sounded 6 times at: 18:00:00
 Alarm sounded at: 15:00.1
 Alarm sounded at: 30:00.1
 Alarm sounded at: 45:00.1
+Hourly alarms sounded 7 times at: 19:00:00
+Alarm sounded at: 15:00.1
+Alarm sounded at: 30:00.1
+!!
+Alarm sounded at: 30:00.1
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 8 times at: 20:00:00
+Alarm sounded at: 15:00.1
+Alarm sounded at: 30:00.1
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 9 times at: 21:00:00
+Alarm sounded at: 15:00.1
+Alarm sounded at: 30:00.1
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 10 times at: 22:00:00
+Alarm sounded at: 15:00.1
+Alarm sounded at: 30:00.1
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 11 times at: 23:00:00
+Alarm sounded at: 15:00.1
+Alarm sounded at: 30:00.1
+Alarm sounded at: 45:00.1
+Hourly alarms sounded 12 times at: 00:00:00
+Alarm sounded at: 15:00.1
+[INFO   ] [Base        ] Leaving application in progress...
+
+
+=== Problem at 00:00:00 solved ===
+- No further action
+
+=== Double alarm at 19:30:00.1 ===
+-  Probably not related to the alarms_callback interval (1 / 10.01) in main.py 
+- Can be tested on a minutely basis
+
+
 
