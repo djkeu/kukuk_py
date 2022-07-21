@@ -68,3 +68,50 @@ Test quarterly alarm sounded at: 02:56:01
 Test quarterly alarm sounded at: 03:01:07
 Test quarterly alarm sounded at: 03:06:06
 
+(.. Interruption in terminal because of copying output ..)
+
+Test quarterly alarm sounded at: 06:11:06
+Test quarterly alarm sounded at: 06:16:02
+Test quarterly alarm sounded at: 06:21:07
+Test quarterly alarm sounded at: 06:26:02
+Test quarterly alarm sounded at: 06:31:01
+Test quarterly alarm sounded at: 06:36:08
+Test quarterly alarm sounded at: 06:41:03
+Test quarterly alarm sounded at: 06:46:08
+Test quarterly alarm sounded at: 06:51:00
+Test quarterly alarm sounded at: 06:56:05
+Test quarterly alarm sounded at: 07:01:05
+Test quarterly alarm sounded at: 07:06:08
+Test quarterly alarm sounded at: 07:11:05
+Test quarterly alarm sounded at: 07:16:05
+Test quarterly alarm sounded at: 07:21:04
+Test quarterly alarm sounded at: 07:26:02
+Test quarterly alarm sounded at: 07:31:05
+Test quarterly alarm sounded at: 07:36:00
+Test quarterly alarm sounded at: 07:41:00
+Test quarterly alarm sounded at: 07:46:05
+Test quarterly alarm sounded at: 07:51:01
+Test quarterly alarm sounded at: 07:56:00
+Test quarterly alarm sounded at: 08:01:07
+Test quarterly alarm sounded at: 08:06:05
+Test quarterly alarm sounded at: 08:11:08
+Test quarterly alarm sounded at: 08:16:05
+Test quarterly alarm sounded at: 08:21:08
+Test quarterly alarm sounded at: 08:26:00
+Test quarterly alarm sounded at: 08:31:03
+Test quarterly alarm sounded at: 08:36:08
+Test quarterly alarm sounded at: 08:41:04
+Test quarterly alarm sounded at: 08:46:03
+Test quarterly alarm sounded at: 08:51:06
+Test quarterly alarm sounded at: 08:56:01
+Test quarterly alarm sounded at: 09:01:03
+Test quarterly alarm sounded at: 09:06:06
+Test quarterly alarm sounded at: 09:11:01
+Test quarterly alarm sounded at: 09:16:04
+Test quarterly alarm sounded at: 09:21:08
+Test quarterly alarm sounded at: 09:26:07
+[INFO   ] [Base        ] Leaving application in progress...
+
+
+=== This works, as it did before attempt to get rid of time.sleep() ===
+
