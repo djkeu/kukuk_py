@@ -1,86 +1,13 @@
-[INFO   ] [Base        ] Leaving application in progress...
-
-
-===  current_hourly_time never reaches 24:00, 23:59  -> 00:00 ===
-Possible solutions:
-- Set all alarms to :59.99 (not used)
-- Start i-range with 0, use 'if i == 0:' to set midnight alarms (used)
-
-
-[INFO   ] [Base        ] Start application main loop
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 5 times at: 17:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 6 times at: 18:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 7 times at: 19:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-!!
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 8 times at: 20:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 9 times at: 21:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 10 times at: 22:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 11 times at: 23:00:00
-Alarm sounded at: 15:00.1
-Alarm sounded at: 30:00.1
-Alarm sounded at: 45:00.1
-Hourly alarms sounded 12 times at: 00:00:00
-Alarm sounded at: 15:00.1
-[INFO   ] [Base        ] Leaving application in progress...
-
-
 === Problem at 00:00:00 solved ===
 - No further action
+
 
 === Double alarm at 19:30:00.1 ===
 Actions:
 - Test on a minutely instead of hourly basis
 
 
-Test quarterly alarm sounded at: 06.2
-Test quarterly alarm sounded at: 06.2
-
-Test quarterly alarm sounded at: 56.2
-Test quarterly alarm sounded at: 56.2
-
-Test quarterly alarm sounded at: 11.2
-Test quarterly alarm sounded at: 11.2
-
-Test quarterly alarm sounded at: 01.2
-Test quarterly alarm sounded at: 01.2
-
-Hourly alarms sounded 12 times at: 12:00:00
-Hourly alarms are alright!!
-
-Test quarterly alarm sounded at: 11.2
-Test quarterly alarm sounded at: 11.2
-
-Test quarterly alarm sounded at: 51.2
-Test quarterly alarm sounded at: 51.2
-
-Test quarterly alarm sounded at: 56.2
-Test quarterly alarm sounded at: 56.2
-
-Test quarterly alarm sounded at: 31.2
-Test quarterly alarm sounded at: 31.2
-
-Test quarterly alarm sounded at: 56.2
-Test quarterly alarm sounded at: 56.2
+(.. abundant logs removed ..)
 
 
 === No failures found ===
@@ -90,18 +17,54 @@ Test quarterly alarm sounded at: 56.2
     - Leading to more doublures
 - Set alarms_callback interval to 1 / 10.001
 
-[INFO   ] [Base        ] Start application main loop
-Test quarterly alarm sounded at: 56.2
-Test quarterly alarm sounded at: 56.2
 
-Test quarterly alarm sounded at: 56.2
-Test quarterly alarm sounded at: 56.2
-Test quarterly alarm sounded at: 01.2
-Test quarterly alarm sounded at: 01.2
+[INFO   ] [Base        ] Start application main loop
+(.. abundant logs removed ..)
 
 
 === Changed interval doesn't solve the problem ===
-- Abandon this approach and revert to time.sleep(1)?
+- Abandon this approach and revert to time.sleep(1)
+- Remove multiseconds from the alarms 
 
 
+[INFO   ] [Base        ] Start application main loop
+[INFO   ] [Base        ] Leaving application in progress...
+PS C:\Users\Gebruiker\Dev\kukuk> python3 main.py
+[INFO   ] [Logger      ] Record log in C:\Users\Gebruiker\.kivy\logs\kivy_22-07-21_12.txt
+Test quarterly alarm sounded at: 00:11:01
+Test quarterly alarm sounded at: 00:16:05
+Test quarterly alarm sounded at: 00:21:08
+Test quarterly alarm sounded at: 00:26:01
+Test quarterly alarm sounded at: 00:31:00
+Test quarterly alarm sounded at: 00:36:06
+Test quarterly alarm sounded at: 00:41:04
+Test quarterly alarm sounded at: 00:46:02
+Test quarterly alarm sounded at: 00:51:07
+Test quarterly alarm sounded at: 00:56:04
+Test quarterly alarm sounded at: 01:01:08
+Test quarterly alarm sounded at: 01:06:06
+Test quarterly alarm sounded at: 01:11:00
+Test quarterly alarm sounded at: 01:16:01
+Test quarterly alarm sounded at: 01:21:05
+Test quarterly alarm sounded at: 01:26:02
+Test quarterly alarm sounded at: 01:31:00
+Test quarterly alarm sounded at: 01:36:08
+Test quarterly alarm sounded at: 01:41:00
+Test quarterly alarm sounded at: 01:46:04
+Test quarterly alarm sounded at: 01:51:00
+Test quarterly alarm sounded at: 01:56:03
+Test quarterly alarm sounded at: 02:01:07
+Test quarterly alarm sounded at: 02:06:08
+Test quarterly alarm sounded at: 02:11:02
+Test quarterly alarm sounded at: 02:16:01
+Test quarterly alarm sounded at: 02:21:06
+Test quarterly alarm sounded at: 02:26:00
+Test quarterly alarm sounded at: 02:31:08
+Test quarterly alarm sounded at: 02:36:01
+Test quarterly alarm sounded at: 02:41:02
+Test quarterly alarm sounded at: 02:46:00
+Test quarterly alarm sounded at: 02:51:01
+Test quarterly alarm sounded at: 02:56:01
+Test quarterly alarm sounded at: 03:01:07
+Test quarterly alarm sounded at: 03:06:06
 
