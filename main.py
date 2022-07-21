@@ -11,7 +11,6 @@ from time import strftime
 
 from alarms import hourly_alarms
 # from alarms import quarterly_alarms 
-from alarms import test_quarterly_alarms
 
 class BoxLayoutKukuk(BoxLayout):
     pass
@@ -27,7 +26,6 @@ class KukukApp(App):
     def alarms_callback(dt):
         hourly_alarms()
         # quarterly_alarms()
-        test_quarterly_alarms()
     
     event = Clock.schedule_interval(alarms_callback, 1 / 11)
 
