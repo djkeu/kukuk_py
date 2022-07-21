@@ -51,3 +51,39 @@ Alarm sounded at: 15:00.1
 Actions:
 - Test on a minutely instead of hourly basis
 
+
+Test quarterly alarm sounded at: 06.2
+Test quarterly alarm sounded at: 06.2
+
+Test quarterly alarm sounded at: 56.2
+Test quarterly alarm sounded at: 56.2
+
+Test quarterly alarm sounded at: 11.2
+Test quarterly alarm sounded at: 11.2
+
+Test quarterly alarm sounded at: 01.2
+Test quarterly alarm sounded at: 01.2
+
+Hourly alarms sounded 12 times at: 12:00:00
+Hourly alarms are alright!!
+
+Test quarterly alarm sounded at: 11.2
+Test quarterly alarm sounded at: 11.2
+
+Test quarterly alarm sounded at: 51.2
+Test quarterly alarm sounded at: 51.2
+
+Test quarterly alarm sounded at: 56.2
+Test quarterly alarm sounded at: 56.2
+
+Test quarterly alarm sounded at: 31.2
+Test quarterly alarm sounded at: 31.2
+
+Test quarterly alarm sounded at: 56.2
+Test quarterly alarm sounded at: 56.2
+
+
+=== No failures found ===
+=== Multiple seemingly random doublures found ===
+
+
