@@ -49,18 +49,3 @@ def quarterly_alarms():
     if current_quarterly_time in alarms:
         kuku_once()
         print(f"Alarm sounded at: {current_quarterly_time}")
-
-
-def test_quarterly_alarms():
-    """Play kuku sound every 5 seconds."""
-    current_minutely_time = datetime.now().strftime("%S")
-    current_logged_time = datetime.now().strftime("%M:%S:%f")[: -4]
-
-    alarms = ("01", "06", "11", "16", "21", "26", 
-            "31", "36", "41", "46", "51", "56")
-
-    if current_minutely_time in alarms:
-        kuku_once()
-        time.sleep(1)
-        print(f"Test quarterly alarm sounded at: {current_logged_time}")
-
