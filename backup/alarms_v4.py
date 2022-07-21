@@ -74,6 +74,7 @@ def quarterly_alarms():
         print(f"Alarm sounded at: {current_quarterly_time}")
 
 
+# Version 1
 def test_quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     current_secondly_time = datetime.now().strftime("%S.%f")[: -5]
@@ -84,6 +85,7 @@ def test_quarterly_alarms():
         print(current_secondly_time)
 
 
+# Version 2
 def test_quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     current_minutely_time = datetime.now().strftime("M:%S.%f")[: -5]
@@ -93,6 +95,4 @@ def test_quarterly_alarms():
     if current_minutely_time in alarms:
         kuku_once()
         print(f"Test alarm sounded at {current_minutely_time}")
-
-
 
