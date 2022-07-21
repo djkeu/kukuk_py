@@ -1,13 +1,13 @@
 === No failures found ===
 === Multiple seemingly random doublures found ===
-
 - Set alarms_callback interval to 1 / 10.1
-    - Leading to more doublures
+    - Leads to (more?) doublures
 - Set alarms_callback interval to 1 / 10.001
 
 
 [INFO   ] [Base        ] Start application main loop
 (.. abundant logs removed ..)
+[INFO   ] [Base        ] Leaving application in progress...
 
 
 === Changed interval doesn't solve the problem ===
@@ -17,11 +17,6 @@
 
 [INFO   ] [Base        ] Start application main loop
 (.. abundant logs removed ..)
-
-(.. Interruption in terminal because of copying output ..)
-
-(.. abundant logs removed ..)
-
 [INFO   ] [Base        ] Leaving application in progress...
 
 
