@@ -59,5 +59,5 @@ def test_quarterly_alarms():
 
     if current_minutely_time in alarms:
         kuku_once()
-        print(f"Test alarm sounded at {current_minutely_time}")
+        print(f"Test alarm sounded at: {current_minutely_time}")
 
