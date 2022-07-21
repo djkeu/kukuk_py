@@ -91,5 +91,17 @@ Test quarterly alarm sounded at: 56.2
 - Set alarms_callback interval to 1 / 10.001
 
 [INFO   ] [Base        ] Start application main loop
+Test quarterly alarm sounded at: 56.2
+Test quarterly alarm sounded at: 56.2
+
+Test quarterly alarm sounded at: 56.2
+Test quarterly alarm sounded at: 56.2
+Test quarterly alarm sounded at: 01.2
+Test quarterly alarm sounded at: 01.2
+
+
+=== Changed interval doesn't solve the problem ===
+- Abandon this approach and revert to time.sleep(1)?
+
 
 
