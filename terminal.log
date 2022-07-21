@@ -31,87 +31,15 @@ Actions:
 [INFO   ] [Base        ] Leaving application in progress...
 PS C:\Users\Gebruiker\Dev\kukuk> python3 main.py
 [INFO   ] [Logger      ] Record log in C:\Users\Gebruiker\.kivy\logs\kivy_22-07-21_12.txt
-Test quarterly alarm sounded at: 00:11:01
-Test quarterly alarm sounded at: 00:16:05
-Test quarterly alarm sounded at: 00:21:08
-Test quarterly alarm sounded at: 00:26:01
-Test quarterly alarm sounded at: 00:31:00
-Test quarterly alarm sounded at: 00:36:06
-Test quarterly alarm sounded at: 00:41:04
-Test quarterly alarm sounded at: 00:46:02
-Test quarterly alarm sounded at: 00:51:07
-Test quarterly alarm sounded at: 00:56:04
-Test quarterly alarm sounded at: 01:01:08
-Test quarterly alarm sounded at: 01:06:06
-Test quarterly alarm sounded at: 01:11:00
-Test quarterly alarm sounded at: 01:16:01
-Test quarterly alarm sounded at: 01:21:05
-Test quarterly alarm sounded at: 01:26:02
-Test quarterly alarm sounded at: 01:31:00
-Test quarterly alarm sounded at: 01:36:08
-Test quarterly alarm sounded at: 01:41:00
-Test quarterly alarm sounded at: 01:46:04
-Test quarterly alarm sounded at: 01:51:00
-Test quarterly alarm sounded at: 01:56:03
-Test quarterly alarm sounded at: 02:01:07
-Test quarterly alarm sounded at: 02:06:08
-Test quarterly alarm sounded at: 02:11:02
-Test quarterly alarm sounded at: 02:16:01
-Test quarterly alarm sounded at: 02:21:06
-Test quarterly alarm sounded at: 02:26:00
-Test quarterly alarm sounded at: 02:31:08
-Test quarterly alarm sounded at: 02:36:01
-Test quarterly alarm sounded at: 02:41:02
-Test quarterly alarm sounded at: 02:46:00
-Test quarterly alarm sounded at: 02:51:01
-Test quarterly alarm sounded at: 02:56:01
-Test quarterly alarm sounded at: 03:01:07
-Test quarterly alarm sounded at: 03:06:06
+(.. abundant logs removed ..)
 
 (.. Interruption in terminal because of copying output ..)
 
-Test quarterly alarm sounded at: 06:11:06
-Test quarterly alarm sounded at: 06:16:02
-Test quarterly alarm sounded at: 06:21:07
-Test quarterly alarm sounded at: 06:26:02
-Test quarterly alarm sounded at: 06:31:01
-Test quarterly alarm sounded at: 06:36:08
-Test quarterly alarm sounded at: 06:41:03
-Test quarterly alarm sounded at: 06:46:08
-Test quarterly alarm sounded at: 06:51:00
-Test quarterly alarm sounded at: 06:56:05
-Test quarterly alarm sounded at: 07:01:05
-Test quarterly alarm sounded at: 07:06:08
-Test quarterly alarm sounded at: 07:11:05
-Test quarterly alarm sounded at: 07:16:05
-Test quarterly alarm sounded at: 07:21:04
-Test quarterly alarm sounded at: 07:26:02
-Test quarterly alarm sounded at: 07:31:05
-Test quarterly alarm sounded at: 07:36:00
-Test quarterly alarm sounded at: 07:41:00
-Test quarterly alarm sounded at: 07:46:05
-Test quarterly alarm sounded at: 07:51:01
-Test quarterly alarm sounded at: 07:56:00
-Test quarterly alarm sounded at: 08:01:07
-Test quarterly alarm sounded at: 08:06:05
-Test quarterly alarm sounded at: 08:11:08
-Test quarterly alarm sounded at: 08:16:05
-Test quarterly alarm sounded at: 08:21:08
-Test quarterly alarm sounded at: 08:26:00
-Test quarterly alarm sounded at: 08:31:03
-Test quarterly alarm sounded at: 08:36:08
-Test quarterly alarm sounded at: 08:41:04
-Test quarterly alarm sounded at: 08:46:03
-Test quarterly alarm sounded at: 08:51:06
-Test quarterly alarm sounded at: 08:56:01
-Test quarterly alarm sounded at: 09:01:03
-Test quarterly alarm sounded at: 09:06:06
-Test quarterly alarm sounded at: 09:11:01
-Test quarterly alarm sounded at: 09:16:04
-Test quarterly alarm sounded at: 09:21:08
-Test quarterly alarm sounded at: 09:26:07
+(.. abundant logs removed ..)
+
 [INFO   ] [Base        ] Leaving application in progress...
 
 
-=== This works, as it did before attempt to get rid of time.sleep() ===
+=== This works, just like it did before the attempt to get rid of time.sleep(). ===
+=== I guess it was a nice waste of time. I hope I learned something from it. ===
 
