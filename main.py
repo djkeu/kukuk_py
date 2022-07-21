@@ -27,7 +27,7 @@ class KukukApp(App):
     def alarms_callback(dt):
         hourly_alarms()
         # quarterly_alarms()
-        test_quarterly_alarms
+        test_quarterly_alarms()
     
     event = Clock.schedule_interval(alarms_callback, 1 / 10.01)
 
