@@ -12,6 +12,13 @@ def kuku_once():
     sound.play()
  
 
+def multiple_kukus(times):
+    """ Play kuku sound multiple times in a row. """
+    for i in range(0, times):
+        kuku_once()
+        time.sleep(1.1)
+
+
 def quarterly_alarms():
     """Play kuku sound every 15 minutes."""
     current_quarterly_time = datetime.now().strftime("%M:%S.%f")[: -5]
@@ -32,11 +39,16 @@ def test_quarterly_alarms():
         print(current_secondly_time)
 
 
-def multiple_kukus(times):
-    """ Play kuku sound multiple times in a row. """
-    for i in range(0, times):
+def test_quarterly_alarms():
+    """Play kuku sound every 15 minutes."""
+    current_minutely_time = datetime.now().strftime("M:%S.%f")[: -5]
+    alarms = ("05:00.1", "10:00.1", "15:00.1", "20:00.1", "25:00.1", 
+        "30:00.1", "35:00.1", "40:00.1", "45:00.1", "50:00.1", "55:00.1")
+
+    if current_minutely_time in alarms:
         kuku_once()
-        time.sleep(1.1)
+        print(f"Test alarm sounded at {current_minutely_time}")
+
 
 
 def hourly_alarms():
