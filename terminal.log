@@ -1,15 +1,3 @@
-=== Problem at 00:00:00 solved ===
-- No further action
-
-
-=== Double alarm at 19:30:00.1 ===
-Actions:
-- Test on a minutely instead of hourly basis
-
-
-(.. abundant logs removed ..)
-
-
 === No failures found ===
 === Multiple seemingly random doublures found ===
 
@@ -28,9 +16,6 @@ Actions:
 
 
 [INFO   ] [Base        ] Start application main loop
-[INFO   ] [Base        ] Leaving application in progress...
-PS C:\Users\Gebruiker\Dev\kukuk> python3 main.py
-[INFO   ] [Logger      ] Record log in C:\Users\Gebruiker\.kivy\logs\kivy_22-07-21_12.txt
 (.. abundant logs removed ..)
 
 (.. Interruption in terminal because of copying output ..)
