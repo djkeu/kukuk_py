@@ -50,4 +50,5 @@ def quarterly_alarms():
 
     if current_quarterly_time in alarms:
         kuku_once()
+        time.sleep(1)
         print(f"Q-alarm sounded at: {current_logged_time}")
