@@ -1,25 +1,3 @@
-=== No failures found ===
-=== Multiple seemingly random doublures found ===
-- Set alarms_callback interval to 1 / 10.1
-    - Leads to (more?) doublures
-- Set alarms_callback interval to 1 / 10.001
-
-
-[INFO   ] [Base        ] Start application main loop
-(.. abundant logs removed ..)
-[INFO   ] [Base        ] Leaving application in progress...
-
-
-=== Changed interval doesn't solve the problem ===
-- Abandon this approach and revert to time.sleep(1)
-- Remove multiseconds from the alarms 
-
-
-[INFO   ] [Base        ] Start application main loop
-(.. abundant logs removed ..)
-[INFO   ] [Base        ] Leaving application in progress...
-
-
-=== This works, just like it did before the attempt to get rid of time.sleep(). ===
-=== I guess it was a nice waste of time. I hope I learned something from it. ===
+=== Terminal log ===
+=== Date ===
 
