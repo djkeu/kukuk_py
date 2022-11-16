@@ -1,0 +1,32 @@
+ToDo kukuk.py
+
+
+ToDo:
+
+- Get rid of settings.py / settings/Settings
+    - Move sound settings to alarm.py,
+    - Screen settings ??
+
+
+Done:
+- Use Toga for the interface instead of pygame
+    - Hm. Lacking docs. Give Kivy a try again.
+- Use range() to get two lists of hours (am/pm): Done
+    - Use one list to hold all hours
+- Use variable to store :00:00 in hourly_alarms()
+- Refactor for-loops in hourly_alarms()
+- Create hourly alarms
+- Find a module to play sound every 15 minutes
+    - pip install datetime
+- Use pygame to play keukuk*.wav
+    - Fix pygame error: Done (16-bit sound file instead of 32-bit float)
+    - Sound appears muted.
+    - Use playsound instead
+- Use 'k'-key to play sound
+    - Remove this bit when it's no longer needed
+- Create maps for images and sounds
+- Record keukuk.wav
+- Get update_screen to fill screen with bg_color
+    - Had to call update_screen in run_game
+- Move settings to settings.py
+- Use pygame to create a window
