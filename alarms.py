@@ -55,3 +55,32 @@ def quarterly_alarms():
         
         if current_quarterly_time == "45:00":
             print(f"Q-alarms are alright!!\n")
+
+
+def minutely_alarms():
+    """ 
+    Play kuku sound according to the minutes. 
+    For testing purposes only.
+    """
+    current_minutely_time = datetime.now().strftime("%M:%S")
+
+    for i in range(1, 60):
+        if i < 11:
+            times = i
+        elif i < 21:
+            times = i - 10
+        elif i < 31:
+            times = i - 20
+        elif i < 41:
+            times = i - 30
+        elif i < 51:
+            times = i - 40
+        else:
+            times = i - 50
+
+        minute = f"{i:02}:00"
+        if current_minutely_time == minute:
+            print(f"Minute: {minute}")
+            print(f"Current time: {current_minutely_time}")
+            print(f"Times:  {times}")
+            multiple_kukus(times)
