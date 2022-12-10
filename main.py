@@ -14,7 +14,7 @@ from alarms import hourly_alarms
 from alarms import quarterly_alarms 
 
 
-Window.size=(400, 300)
+Window.size=(500, 400)
 
 class BoxLayoutKukuk(BoxLayout):
     pass
