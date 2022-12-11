@@ -18,18 +18,23 @@ from alarms import minutely_alarms
 Window.size=(500, 400)
 
 class BoxLayoutKukuk(BoxLayout):
+    """" Add docstring """
     pass
 
 
 class KukukApp(App):
+    """" Add docstring """
 
     def update_time(self, i_val):
+        """" Add docstring """
         self.root.ids.kuku_time.text = strftime("%H:%M:%S")
 
     def on_start(self):
+        """" Add docstring """
         Clock.schedule_interval(self.update_time, 1)
 
     def alarms_callback(dt):
+        """" Add docstring """
         # quarterly_alarms()
         # hourly_alarms()
         minutely_alarms()
