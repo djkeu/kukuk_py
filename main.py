@@ -12,6 +12,7 @@ from time import strftime
 
 from alarms import hourly_alarms 
 from alarms import quarterly_alarms 
+from alarms import minutely_alarms
 
 
 Window.size=(500, 400)
@@ -21,6 +22,7 @@ class BoxLayoutKukuk(BoxLayout):
 
 
 class KukukApp(App):
+
     def update_time(self, i_val):
         self.root.ids.kuku_time.text = strftime("%H:%M:%S")
 
@@ -28,8 +30,11 @@ class KukukApp(App):
         Clock.schedule_interval(self.update_time, 1)
 
     def alarms_callback(dt):
-        hourly_alarms()
-        quarterly_alarms()
+        # quarterly_alarms()
+        # hourly_alarms()
+        minutely_alarms()
+
+        
     
     event = Clock.schedule_interval(alarms_callback, 1 / 11)
 
