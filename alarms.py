@@ -82,5 +82,5 @@ def minutely_alarms():
         minute = f"{i:02}:00"
         if current_minutely_time == minute:
             multiple_kukus(times)
-            print(f"Minutely alarms sounded {times} times at: {current_time}")
+            print(f"Minutely alarms sounded {times} time(s) at: {current_time}")
             print("Minutely alarms are alright!!\n")
