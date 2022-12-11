@@ -21,6 +21,22 @@ def multiple_kukus(times):
 
 
 # Alarms section
+def quarterly_alarms():
+    """Play kuku sound every 15 minutes."""
+    current_quarterly_time = datetime.now().strftime("%M:%S")
+    current_logged_time = datetime.now().strftime("%H:%M:%S")
+
+    alarms = ("15:00", "30:00", "45:00")
+
+    if current_quarterly_time in alarms:
+        kuku_once()
+        time.sleep(1)
+        print(f"Q-alarm sounded at: {current_logged_time}")
+        
+        if current_quarterly_time == "45:00":
+            print(f"Q-alarms are alright!!\n")
+
+
 def hourly_alarms():
     """ Play kuku sound according to the hours. """
     current_hourly_time = datetime.now().strftime("%H:%M:%S")
@@ -39,22 +55,6 @@ def hourly_alarms():
             multiple_kukus(times)
             print(f"Hourly alarms sounded {times} times at: {current_hourly_time}")
             print(f"Hourly alarms are alright!!\n")
-
-
-def quarterly_alarms():
-    """Play kuku sound every 15 minutes."""
-    current_quarterly_time = datetime.now().strftime("%M:%S")
-    current_logged_time = datetime.now().strftime("%H:%M:%S")
-
-    alarms = ("15:00", "30:00", "45:00")
-
-    if current_quarterly_time in alarms:
-        kuku_once()
-        time.sleep(1)
-        print(f"Q-alarm sounded at: {current_logged_time}")
-        
-        if current_quarterly_time == "45:00":
-            print(f"Q-alarms are alright!!\n")
 
 
 def minutely_alarms():
