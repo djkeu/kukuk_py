@@ -4,7 +4,7 @@ from datetime import datetime
 from kivy.core.audio import SoundLoader
 
 
-# Sound section
+# Sound section #
 
 def kuku_once():
     """ Play kuku sound once. """
@@ -21,7 +21,7 @@ def multiple_kukus(times):
         time.sleep(1.1)
 
 
-# Alarms section
+# Alarms section #
 
 def quarterly_alarms():
     """Play kuku sound every 15 minutes."""
