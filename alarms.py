@@ -33,8 +33,7 @@ def quarterly_alarms():
     if current_quarterly_time in alarms:
         kuku_once()
         time.sleep(1)
-        print(f"Q-alarm sounded at: {current_logged_time}")
-        print(f"Q-alarms are alright!!\n")
+        print(f"Quarterly alarm sounded 1 time at: {current_logged_time}.\n")
 
 
 def hourly_alarms():
@@ -53,8 +52,7 @@ def hourly_alarms():
         
         if hour == current_hourly_time:
             multiple_kukus(times)
-            print(f"Hourly alarms sounded {times} times at: {current_hourly_time}")
-            print(f"Hourly alarms are alright!!\n")
+            print(f"Hourly alarms sounded {times} times at: {current_hourly_time}.\n")
 
 
 def minutely_alarms():
@@ -82,5 +80,4 @@ def minutely_alarms():
         minute = f"{i:02}:00"
         if current_minutely_time == minute:
             multiple_kukus(times)
-            print(f"Minutely alarms sounded {times} time(s) at: {current_time}")
-            print("Minutely alarms are alright!!\n")
+            print(f"Minutely alarms sounded {times} time(s) at: {current_time}.\n")
