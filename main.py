@@ -23,18 +23,18 @@ class BoxLayoutKukuk(BoxLayout):
 
 
 class KukukApp(App):
-    """" Add docstring """
+    """" Class to mimic a cuckoo clock. """
 
     def update_time(self, i_val):
-        """" Add docstring """
+        """" Update the digital clock  with the current time. """
         self.root.ids.kuku_time.text = strftime("%H:%M:%S")
 
     def on_start(self):
-        """" Add docstring """
+        """" Docstring """
         Clock.schedule_interval(self.update_time, 1)
 
     def alarms_callback(dt):
-        """" Add docstring """
+        """" Choose the alarms to be called. """
         # quarterly_alarms()
         # hourly_alarms()
         minutely_alarms()
