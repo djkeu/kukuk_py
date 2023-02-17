@@ -1,7 +1,4 @@
 // Suggestion 1
-// 1. Replace the Thread.sleep() call in kukuSoundTimes() with a non-blocking delay using coroutines:
-
-
 private suspend fun delayWithMillis(millis: Long) = withContext(Dispatchers.Default) { delay(millis) }
 ...
 private suspend fun kukuSoundTimes(times: Int) {
@@ -11,11 +8,6 @@ private suspend fun kukuSoundTimes(times: Int) {
     }
 }
 
-
-
-// Suggestion 2
-/* Avoid using Thread.sleep() in loops or coroutines to avoid blocking the main thread. Instead, use delay() with coroutines to pause for a specified time:
-*/
 
 private suspend fun minutelyAlarms() {
     while (true) {
@@ -54,20 +46,14 @@ private suspend fun minutelyAlarms() {
 
 
 
-
 // Suggestion 3: Multiple suggestions
 /*
     Avoid using findViewById() repeatedly in the code. Instead, use data binding or ViewBinding to bind views to Kotlin classes.
-
-    You can replace the Calendar.getInstance().time with Date() to get the current date and time.
 
     Use when statement in place of the long if...else ladder in minutelyAlarms() and hourlyAlarms().
 
     Add a try-catch block around the MediaPlayer.create() call in kukuSoundOnce() and handle any exceptions that may occur.
 
-    You can move the formatter object to a class-level variable and reuse it in all the methods.
-
-Here is the updated code with the above suggestions implemented:
  */
 
 

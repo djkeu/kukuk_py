@@ -1,23 +1,7 @@
 /*
-There are a few ways that the Kotlin code can be improved:
-
-    Avoid blocking the main thread
-
 The minutelyAlarms and hourlyAlarms functions contain loops that can cause the app to freeze if they are executed on the main thread. To avoid this, these functions can be executed on a background thread using coroutines.
 
-    Use better naming conventions
-
-Variable and function names should be descriptive and use consistent naming conventions. For example, it would be clearer to rename chooseAlarms() to something like startSelectedAlarms(). It's also a good practice to use camelCase for function and variable names and PascalCase for class names.
-
-    Remove unused code
-
-The quarterlyAlarms() function is currently marked as @Suppress("unused"), indicating that it is not used in the current version of the code. Removing this function will make the code easier to read and maintain.
-
-    Refactor repetitive code
-
-The kukuTextOnce() and kukuSoundOnce() functions contain similar logic. To avoid repetition, they can be combined into a single function that takes a parameter indicating whether to play the sound or show the text.
-
-    Use sealed classes for constants
+Use sealed classes for constants
 
 The quarters array in the quarterlyAlarms() function contains a fixed set of values. To make this more explicit, it can be defined as a sealed class with a fixed set of subclasses.
 
