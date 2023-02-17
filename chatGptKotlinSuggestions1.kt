@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
         // Start and stop the alarms
         val kukuScope = MainScope()
 
-        fun chooseAlarms() {
+        // fun chooseAlarms() {
             // quarterlyAlarms()
             // hourlyAlarms()
             minutelyAlarms()
