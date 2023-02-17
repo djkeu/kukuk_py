@@ -9,48 +9,7 @@ Here is an example of how the code can be improved:
  */
 
 
-package nl.djkeu.kukuk
-
-import android.media.MediaPlayer
-import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import kotlinx.coroutines.*
-import java.text.SimpleDateFormat
-import java.util.*
-
-class MainActivity : AppCompatActivity() {
-    private val kukuScope = MainScope()
-    private var job: Job? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        startSelectedAlarms()
-    }
-
-    private fun startSelectedAlarms() {
-        stopAlarms()
-        job = kukuScope.launch {
-            loopAlarms()
-        }
-    }
-
-    private fun stopAlarms() {
-        job?.cancel()
-        job = null
-    }
-
-    private suspend fun loopAlarms() {
-        while (true) {
-            delay(1000)
-            minutelyAlarms()
-            hourlyAlarms()
-        }
-    }
-
-    private fun kukuAlert(playSound: Boolean, showText: Boolean) {
+private fun kukuAlert(playSound: Boolean, showText: Boolean) {
         if (playSound) {
             val resourceId = resources.getIdentifier("keukuk", "raw", packageName)
             val kukuPlayer = MediaPlayer.create(this, resourceId)
@@ -66,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    
+    
     private sealed class Quarter(val time: String) {
         object Quarter15 : Quarter("15:00")
         object Quarter30 : Quarter("30:00")
