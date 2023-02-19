@@ -1,3 +1,4 @@
+/* Done:
 Use when statement instead of long if..else ladder:
 
 As the TODO suggests, it is better to use a when statement instead of a long if-else ladder. This makes the code more concise and easier to read. Here's an example:
@@ -11,6 +12,7 @@ val times = when {
     i < 51 -> i - 40
     else -> i - 50
 }
+*/
 
 
 Use Kotlin's built-in date/time APIs:
