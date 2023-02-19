@@ -81,7 +81,7 @@ Use setContentView with a view binding
 You can use view binding to simplify the code for accessing views. Here's an example:
  */
 
- private lateinit var binding: ActivityMainBinding
+private lateinit var binding: ActivityMainBinding
 
 override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
