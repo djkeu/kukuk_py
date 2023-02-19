@@ -49,3 +49,46 @@ private fun kukuAlert(playSound: Boolean, showText: Boolean) {
             kukuToast.show()
         }
     }
+
+
+/*
+Move UI-related code to the UI thread
+Code that modifies the UI (e.g., resultTextView.text = "") should be executed on the UI thread to avoid concurrency issues. You can use runOnUiThread function to run code on the UI thread. Here's an example:
+ */
+
+runOnUiThread {
+    resultTextView.text = ""
+}
+
+/*
+Simplify code using extension functions
+You can use extension functions to simplify the code and make it more readable. For example, you can create an extension function on Calendar to format the time as a string. Here's an example:
+ */
+
+fun Calendar.formatTime(pattern: String): String {
+    val formatter = SimpleDateFormat(pattern, Locale.getDefault())
+    return formatter.format(time)
+}
+
+/*
+Then you can use this function to format the current time as follows:
+ */
+
+val currentTime = Calendar.getInstance().formatTime("mm:ss")
+
+/*
+Use setContentView with a view binding
+You can use view binding to simplify the code for accessing views. Here's an example:
+ */
+
+ private lateinit var binding: ActivityMainBinding
+
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    binding = ActivityMainBinding.inflate(layoutInflater)
+    setContentView(binding.root)
+}
+
+/*
+Then you can access views using binding.viewId.
+*/
