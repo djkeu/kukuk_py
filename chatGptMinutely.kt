@@ -1,3 +1,14 @@
+/* Rejected: Min API version needed doesn't match
+Use Kotlin's built-in date/time APIs:
+
+Instead of using Date and SimpleDateFormat from the Java API, it is recommended to use Kotlin's built-in date/time APIs. Here's an example:
+
+// Code needs looking at
+val currentTime = LocalTime.now()
+val minute = currentTime.format(DateTimeFormatter.ofPattern("mm:ss"))
+
+*/
+
 /* Done:
 Use when statement instead of long if..else ladder:
 
@@ -15,22 +26,15 @@ val times = when {
 */
 
 
-Use Kotlin's built-in date/time APIs:
-
-Instead of using Date and SimpleDateFormat from the Java API, it is recommended to use Kotlin's built-in date/time APIs. Here's an example:
-
-
-val currentTime = LocalTime.now()
-val minute = currentTime.format(DateTimeFormatter.ofPattern("mm:ss"))
-
-
+/* Rejected:
 Use a more meaningful name for the function:
 
 The name minutelyAlarms() is not very clear about what the function does. It would be better to use a more meaningful name that describes the purpose of the function.
+*/
 
 
+/* Rejected:
 Consider using coroutines for asynchronous programming:
 
 Since the function is already marked with the suspend modifier, it is likely that it is part of an asynchronous program. In that case, it may be useful to use coroutines to make the code more concise and easier to reason about.
-
-
+*/
