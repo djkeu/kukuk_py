@@ -1,3 +1,7 @@
 __pycache__/
 .buildozer/
 bin/
+./pytest_cache
+
+
+ku_env/
