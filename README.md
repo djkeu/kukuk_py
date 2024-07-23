@@ -1,7 +1,9 @@
 # kukuk_python
 
 ### Abondoned!
-In favor of the JavaScript version
+In favor of the JavaScript version\
+https://github.com/djkeu/kukuk-js
+
 
 ## Obsolete Readme
 Switched to Kotlin for better performance on Android, repository: kukuk-android
