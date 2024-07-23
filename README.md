@@ -3,7 +3,7 @@
 ### Abondoned!
 In favor of the JavaScript version
 
-## Obsolete
+## Obsolete Readme
 Switched to Kotlin for better performance on Android, repository: kukuk-android
 
 Always wanted to have a cuckoo clock but simply couldn't afford one?
