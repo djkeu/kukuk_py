@@ -1,4 +1,4 @@
-# Kukuk-python
+# kukuk_python
 
 ### Abondoned!
 In favor of the JavaScript version
